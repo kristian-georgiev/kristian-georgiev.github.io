@@ -1,8 +1,8 @@
-title: Test title
+title: Kris's Blog
 author: Kristian Georgiev
 email: krisgrg@mit.edu
 description: A decent site
 github_username:  kristian_georgiev
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: minima
