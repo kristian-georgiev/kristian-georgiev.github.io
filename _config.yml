@@ -5,4 +5,4 @@ description: A decent site
 github_username:  kristian_georgiev
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hacker
