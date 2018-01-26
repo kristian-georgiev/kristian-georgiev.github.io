@@ -3,27 +3,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Kristian Georgiev</title>
+  <title>Kristian Georgiev's Webpage</title>
 
   <!-- CSS  -->
+  <link rel="shortcut icon" href="logos/logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
+  <div id="home">
+
+  </div>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>        
+        <li><a href="#about">About Me</a></li>   
+        <li><a href="#contacts">Contact Me</a></li>   
+        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="github-logo.png" style="margin-bottom:17%"> Github </a></li>                
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Lecture Notes & other resources</a></li>
-        <li><a href="#">Contacts</a></li>
-        
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>        
+        <li><a href="#about">About Me</a></li>   
+        <li><a href="#contacts">Contact Me</a></li>   
+        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="github-logo.png" style="margin-bottom:7%"> Github </a></li>                
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -31,61 +41,43 @@
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
-      <div class="container">
+      <div class="container center">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <div class="row center" style="margin-top:15%">
+              <h1 class="center teal lighten-1" 
+              style="padding-top:0.3%; padding-right:1%; padding-left:1%; padding-bottom:1%; display:inline; background-color:rgb(38,166,154,0.87) !important">
+              Hey, I'm Kris
+          </h1>
+ 
+          </div>     
+          <br><br>      
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
 
-      </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="footage/background-grid-1.png" alt="Unsplashed background img 1"></div>
   </div>
 
 
-  <div class="container">
+  <div class="container" id="projects">
+
+      <div class="center" style="position:relative">
+          <a class="arrow-wrap" href="#projects" style="position:absolute !important; bottom:0 !important">
+              <span class="arrow" ></span>
+              </a>
+      </div>
+  
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
+  
+      <div style="height:300px">
+          stuff goes here
       </div>
-
+ 
     </div>
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper", id="blog">
+    
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -96,26 +88,35 @@
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <div class="container" id="about">
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
+          <div style="height:300px">
+              more stuff goes here
+          </div>
+     </div>
 
     </div>
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="contacts">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="row center" style="background-color:rgb(0,0,0,0.7); padding-top:2%;padding-bottom:15%;padding-left:5%;padding-right:5%">
+            <h4>Contact Me</h4>
+            <p class="left-align light">Want to work together? Interested in what I do? Please find me here.</p>
+
+          <form id="comment_form" action="forms/form.php" method="post">
+              <input type="email" placeholder="Type your email" size="40"><br><br>
+              <textarea name="comment" rows="8" cols="39"></textarea><br><br>
+              <div class="g-recaptcha center" data-sitekey="6LeklkIUAAAAALVRWV2oqCRRaaks5Uo5lhliUwa-"></div>
+              <input class="btn-large" type="submit" name="submit" value="Send Email"><br><br>
+            </form>
+
+
+
         </div>
       </div>
     </div>
@@ -126,8 +127,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <img src="rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt"> 
+          <p class="grey-text text-lighten-4"> Let's go. In and out. 20 minutes. </p>
 
 
         </div>
@@ -152,8 +153,11 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made with &hearts;. Many thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container">      
+      <p style="text-align:left;">
+         Made with &hearts;. Many thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>!
+        <span style="float:right;">Last modified <script>document.write(document.lastModified);</script> </span>
+      </p>
       </div>
     </div>
   </footer>

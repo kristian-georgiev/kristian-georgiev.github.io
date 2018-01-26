@@ -6,7 +6,17 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
+ .github a {
+  background-image:url("github.png") !important;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 100%;
+  display:block;
+  padding-left: 30px;
+}
+
+
+ nav ul a,
 nav .brand-logo {
   color: #444;
 }
@@ -54,4 +64,52 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-5em;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+@font-face {
+    font-family: 'typograph_prosemibold';
+    src: url('typograph_pro_semi_bold-webfont.woff2') format('woff2'),
+         url('typograph_pro_semi_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
