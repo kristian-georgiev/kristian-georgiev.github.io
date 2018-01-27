@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="form.js"></script>
@@ -112,6 +113,57 @@
           <br><br>  
           <h3 class="title">Contact Me</h3>
           <p>Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write to me. </p>
+          <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                  <h2>Feedback</h2> 
+                  <p> Please provide your feedback below: </p>
+                  <form role="form" method="post" id="reused_form">
+                      <div class="row">
+                          <div class="col-sm-12 form-group">
+                              <label>How do you rate your overall experience?</label>
+                              <p>
+                                  <label class="radio-inline">
+                                      <input type="radio" name="experience" id="radio_experience" value="bad" >
+                                      <i class="fa fa-frown-o fa-2x" aria-hidden="true"></i> Bad 
+                                  </label>
+                                  <label class="radio-inline">
+                                      <input type="radio" name="experience" id="radio_experience" value="average" >
+                                      <i class="fa fa-meh-o fa-2x" aria-hidden="true"></i> Just OK 
+                                  </label>
+                                  <label class="radio-inline">
+                                      <input type="radio" name="experience" id="radio_experience" value="good" >
+                                      <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i> Good 
+                                  </label>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 form-group">
+                              <label for="comments"> Comments:</label>
+                              <textarea class="form-control" type="textarea" id="comments" placeholder="&#xf040;" name="comments" maxlength="6000" rows="7"></textarea>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-6 form-group">
+                              <label for="name"> Your Name:</label>
+                              <input type="text" class="form-control" placeholder="&#xf007;" id="name" name="name" required>
+                          </div>
+                          <div class="col-sm-6 form-group">
+                              <label for="email"> Email:</label>
+                              <input type="email" class="form-control" placeholder="&#xf003;" id="email" name="email" required>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 form-group">
+                              <button type="submit" class="btn btn-lg btn-warning pull-right" > <i class="fa fa-send-o " aria-hidden="true"></i> Send &rarr;</button>
+                          </div>
+                      </div>
+                  </form>
+                  <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                  <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+              </div>
+          </div>
+
           <div class="container">
               <div class="container">
                   <div>
