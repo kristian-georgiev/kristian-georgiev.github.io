@@ -10,16 +10,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script src="form.js"></script>
-
 </head>
 <body>
   <div id="home">
   </div>
-  <nav class="teal" role="navigation">
+  <nav class="blue" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"></a>
       <ul class="right hide-on-med-and-down" style="color:white">
@@ -27,7 +22,7 @@
         <li><a href="#blog" style="color:white">Blog</a></li>        
         <li><a href="#about" style="color:white">About Me</a></li>   
         <li><a href="#contacts" style="color:white">Contact Me</a></li>   
-        <li>  <a href="https://github.com/kristian-georgiev" class="github" style="color:white"><img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a></li>                
+        <li>  <a href="https://github.com/kristian-georgiev" class="github right-align" style="color:white"><img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a></li>                
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -46,8 +41,8 @@
       <div class="container center">
         <br><br>
           <div class="row center" style="margin-top:15%">
-              <h1 class="center teal lighten-1" 
-              style="padding-top:0.3%; padding-right:1%; padding-left:1%; padding-bottom:1%; display:inline; background-color:rgb(38,166,154,0.87) !important">
+              <h1 class="center blue lighten-1" 
+              style="padding-top:0.3%; padding-right:1%; padding-left:1%; padding-bottom:1%; display:inline; background-color:rgb(33,150,243,0.87) !important">
               Hey, I'm Kris
           </h1>
  
@@ -60,109 +55,204 @@
   </div>
 
   <div class="center" style="position:relative">
-      <a class="arrow-wrap" href="#projects" style="position:absolute !important; bottom:0 !important">
+      <a class="arrow-wrap pulse" href="#projects" style="position:absolute !important; bottom:0 !important">
           <span class="arrow" ></span>
           </a>
   </div>
 
-  <div class="teal" style="height:100px"></div>
+  <div class="blue" style="height:100px"></div>
   <div class="container" id="projects">
 
   
     <div class="section">
-      <div style="height:700px">
+<blockquote class="title" style="font-size:3rem;font-weight:bold">
+  Projects
+</blockquote>
 
-        Projects.
-          <div class="github-widget" data-username="kristian-georgiev"></div>
-<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-      </div>
- 
-    </div>
+<div class="row center">
+    <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+<h3 >
+    Projects in pure mathematics
+</h3>
+<hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+        <div class="col 6 s12 m6">
+            <div class="card" >
+                <div class="card-image waves-effect waves-block waves-light" >
+                  <img class="activator" src="footage/wolff.jpg" alt="wolff-construction" style="vertical-align:center">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in Fn satisfying the Wolff axiom</span>
+                  <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>   
+        </div>
+
+  <div class="col 6 s12 m6">
+      <div class="card" >
+          <div class="card-image waves-effect waves-block waves-light" >
+            <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus" style="vertical-align:center" >
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds obtained by the identification of the edges of $2n$-gons</span>
+            <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>   
   </div>
 
+</div>  <!-- end of first row -->
 
-  <div class="parallax-container valign-wrapper", id="blog">
+      
+<div class="row center">
+    <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+<h3 >
+    Projects in CS & Machine Learning
+</h3>
+<hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+
+  <div class="col 6 s12 m6">
+      <div class="card" >
+          <div class="card-image waves-effect waves-block waves-light" >
+            <img class="activator" src="footage/hair.jpg" alt="wolff-construction" style="max-height:100%">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in Fn satisfying the Wolff axiom</span>
+            <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>   
+  </div>
+
+  <div class="col 6 s12 m6 center">
+
+
+      <div class="github-widget center" data-username="kristian-georgiev"></div>
+      <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+
+
+    </div>
+
+
+</div>  <!-- end of second row -->
+
+      
+      <div class="row center">
+          <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+      <h3 >
+          Smaller Projects for Fun
+      </h3>
+      <hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+              <div class="col 6 s12 m6">
+      
+      
+        
+      
+              </div>
+      
+        <div class="col 6 s12 m6">
+            <div class="card" >
+                <div class="card-image waves-effect waves-block waves-light" >
+                  <img class="activator" src="footage/hair.jpg" alt="wolff-construction" style="max-height:100%">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in Fn satisfying the Wolff axiom</span>
+                  <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+              </div>   
+        </div>
+            </div>  <!-- end of third row -->
+      
+      
+
+    </div>
+ <!-- end of section -->
+    </div>
+<!-- end of container -->
+
+  <div class="parallax-container valign-wrapper", id="blog" style="min-height:50vh">
     
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="btn-large center waves-effect waves-ripple waves-light" style="text-transform:none !important; font-size:20pt !important;line-height: 34px !important ">A blog about math,<br> art and travel.</h5>
+          <h5 class="btn-large blue center waves-effect waves-ripple waves-light" style="text-transform:none !important; font-size:2rem !important;line-height: 54px !important;">A blog about math,<br> art and travel.</h5>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="background/blog-background.jpg"  alt="Unsplashed background img 2" style="max-width:100%;height:auto"></div>
   </div>
-  <div class="container" id="about">
+  <div class="container" id="about" style="min-height:75vh">
     <div class="section">
-
       <div class="row">
-          <div style="height:300px">
-              About
+          <blockquote class="title" style="font-size:40px;font-weight:bold">
+              About me
+            </blockquote>
+
+            <div class="col 6 s12">
+                <h2 class="header">Horizontal Card</h2>
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="https://lorempixel.com/100/190/nature/6">
+                      </div>
+
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                    </div>
+    
+                  </div>
+                </div>
+
           </div>
-     </div>
+<!-- end of col -->
+<div class="col 6 s12">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="https://lorempixel.com/100/190/nature/6">
+          </div>
+
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+<!-- end of col -->
+
+        </div>
 
     </div>
   </div>
 
 
-  <div class="parallax-container valign-wrapper" id="contacts">
-    <div class="section no-pad-bot">
-      <div class="container">
-
-        <div class="row center" style="background-color:rgb(0,0,0,0.7);width:90%">
-          <br><br>  
-          <h3 class="title">Contact Me</h3>
-          <p>Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write to me. </p>
-          <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                  <h2>Feedback</h2> 
-                  <p> Please provide your feedback below: </p>
-                  <form role="form" method="post" id="reused_form">
-                      <div class="row">
-                          <div class="col-sm-12 form-group">
-                              <label>How do you rate your overall experience?</label>
-                              <p>
-                                  <label class="radio-inline">
-                                      <input type="radio" name="experience" id="radio_experience" value="bad" >
-                                      <i class="fa fa-frown-o fa-2x" aria-hidden="true"></i> Bad 
-                                  </label>
-                                  <label class="radio-inline">
-                                      <input type="radio" name="experience" id="radio_experience" value="average" >
-                                      <i class="fa fa-meh-o fa-2x" aria-hidden="true"></i> Just OK 
-                                  </label>
-                                  <label class="radio-inline">
-                                      <input type="radio" name="experience" id="radio_experience" value="good" >
-                                      <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i> Good 
-                                  </label>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-sm-12 form-group">
-                              <label for="comments"> Comments:</label>
-                              <textarea class="form-control" type="textarea" id="comments" placeholder="&#xf040;" name="comments" maxlength="6000" rows="7"></textarea>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-sm-6 form-group">
-                              <label for="name"> Your Name:</label>
-                              <input type="text" class="form-control" placeholder="&#xf007;" id="name" name="name" required>
-                          </div>
-                          <div class="col-sm-6 form-group">
-                              <label for="email"> Email:</label>
-                              <input type="email" class="form-control" placeholder="&#xf003;" id="email" name="email" required>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-sm-12 form-group">
-                              <button type="submit" class="btn btn-lg btn-warning pull-right" > <i class="fa fa-send-o " aria-hidden="true"></i> Send &rarr;</button>
-                          </div>
-                      </div>
-                  </form>
-                  <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
-                  <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
-              </div>
-          </div>
+  <div class="parallax-container valign-wrapper" id="contacts" style="min-height:75vh">
+  <br><br>
+        <div class="row center" style="background-color:rgb(0,0,0,0.7);width:90%;margin-top:3vh" >
+          <h3>Contact me</h3>
+          <p class="flow-text">Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write to me. </p>
 
           <div class="container">
               <div class="container">
@@ -188,7 +278,7 @@
                                   </div>
                               </div>
                               <div>
-                                  <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+                                  <button class=" blue waves-effect waves-light btn submitbtn" type="submit">Submit</button>
                               </div>
                           </form>
                           <div id="error_message" style="width:100%; height:100%; display:none; ">
@@ -209,22 +299,18 @@
               <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
           </div>
   
-
-
-        </div>
-
-
-        </div>
       </div>
     
     <div class="parallax"><img src="background/bg3kristiangeorgiev4.JPG" alt="Unsplashed background img 3" ></div>
+    <br><br>
+
   </div>
 </div>
-  <footer class="page-footer teal">
+  <footer class="page-footer blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <a  href="https://youtu.be/Q8gcU5PwWlU?t=40s">
+          <a  href="https://youtu.be/Q8gcU5PwWlU?t=40s" target="_blank">
           <img src="footage/rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt"> 
         </a>
           <p class="grey-text text-lighten-4"> Let's go. In and out. 20 minutes. </p>
@@ -233,15 +319,15 @@
       </div>
 
         <div class="col l3 s12">
-            <h5 class="white-text">Social media </h5>
+          <blockquote> <h5>Social media</h5></blockquote>
             <div>
-                <a href="https://www.facebook.com/kristian.georgieff">
+                <a href="https://www.facebook.com/kristian.georgieff" target="_blank">
                 <img src="social-media-icons/fb-icon.png" alt="facebook-account" style="margin-right:10%">
               </a>
-                  <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/">
+                  <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/" target="_blank">
                   <img src="social-media-icons/linkedin-icon.png" alt="linkedin-account" style="margin-right:10%">
                 </a>
-                    <a href="https://www.quora.com/profile/Kristian-Georgiev-4">
+                    <a href="https://www.quora.com/profile/Kristian-Georgiev-4" target="_blank">
                     <img src="social-media-icons/quora-icon.png" alt="quora-account">
                   </a>
                   </div>
@@ -254,7 +340,7 @@
     <div class="footer-copyright">
       <div class="container">      
       <p style="text-align:left;">
-         Made with &hearts;. Many thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>!
+         Made with &hearts;. Many thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a>!
         <span style="float:right;">Last modified <script>document.write(document.lastModified);</script> </span>
       </p>
       </div>
@@ -266,6 +352,11 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="form.js"></script>
+
 
   </body>
 </html>

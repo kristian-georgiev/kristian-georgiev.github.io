@@ -72,7 +72,7 @@ footer.page-footer {
   left:50%;
   top:-5em;
   margin-left:-5em;
-  background: #048E81;
+  background: #2196F3;
   width:10em;
   height:10em;
   padding:3.7em 1.6em;
@@ -103,7 +103,7 @@ footer.page-footer {
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: #048E81 transparent transparent transparent;
+  border-color: #2196F3 transparent transparent transparent;
   -webkit-transform:rotate(360deg)
 }
 
