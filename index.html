@@ -24,7 +24,7 @@
         <li><a href="#blog">Blog</a></li>        
         <li><a href="#about">About Me</a></li>   
         <li><a href="#contacts">Contact Me</a></li>   
-        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="github-logo.png" style="margin-bottom:17%"> Github </a></li>                
+        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="logos/github-logo.png" style="margin-bottom:17%"> Github </a></li>                
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -81,13 +81,13 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="btn-large center waves-effect waves-ripple waves-light" style="font-size:20pt !important">Go to the blog</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="background/bg1kristiangeorgiev1.jpg"  alt="Unsplashed background img 2" style="   max-width: 15%;
+      height: auto;"></div>
   </div>
-
   <div class="container" id="about">
     <div class="section">
 
@@ -104,52 +104,94 @@
   <div class="parallax-container valign-wrapper" id="contacts">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center" style="background-color:rgb(0,0,0,0.7); padding-top:2%;padding-bottom:15%;padding-left:5%;padding-right:5%">
-            <h4>Contact Me</h4>
-            <p class="left-align light">Want to work together? Interested in what I do? Please find me here.</p>
 
-          <form id="comment_form" action="forms/form.php" method="post">
-              <input type="email" placeholder="Type your email" size="40"><br><br>
-              <textarea name="comment" rows="8" cols="39"></textarea><br><br>
-              <div class="g-recaptcha center" data-sitekey="6LeklkIUAAAAALVRWV2oqCRRaaks5Uo5lhliUwa-"></div>
-              <input class="btn-large" type="submit" name="submit" value="Send Email"><br><br>
-            </form>
-
+        <div class="row center" style="background-color:rgb(0,0,0,0.7);width:90%">
+          <br><br>  
+          <h3>Contact Me</h3>
+          <div class="imagebg"></div>
+                <div class="form-container z-depth-5">
+                    <div class="row">
+                        <form class="col s12" id="reused_form">
+                            <h4 class="left-align light">Want to work together? Interested in what I do? Please find me here.</h4>
+                 
+                          <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text" name="name" required class="validate">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" name="email" required class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" name="message" class="materialize-textarea" class="validate" ></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LeklkIUAAAAALVRWV2oqCRRaaks5Uo5lhliUwa-"></div> <br> <br>
+ 
+                            <div>
+                                <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry there was an error sending your form. 
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Success! Your Message was Sent Successfully.
+                            </h4>
+                        </div>
+                </div>
+            </div>
+            <!--Import jQuery before materialize.js-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        </div>
 
 
         </div>
       </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    
+    <div class="parallax"><img src="background/bg3kristiangeorgiev4.jpg" alt="Unsplashed background img 3" style="max-width:15%; height:auto"></div>
   </div>
-
+</div>
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <img src="rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt"> 
+          <a  href="https://youtu.be/Q8gcU5PwWlU?t=40s">
+          <img src="footage/rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt"> 
+        </a>
           <p class="grey-text text-lighten-4"> Let's go. In and out. 20 minutes. </p>
+        </div>
+      <div class="col l3 s12">
+      </div>
 
+        <div class="col l3 s12">
+            <h5 class="white-text">Social media </h5>
+            <div>
+                <a href="https://www.facebook.com/kristian.georgieff">
+                <img src="social-media-icons/fb-icon.png" alt="facebook-account" style="margin-right:10%">
+              </a>
+                  <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/">
+                  <img src="social-media-icons/linkedin-icon.png" alt="linkedin-account" style="margin-right:10%">
+                </a>
+                    <a href="https://www.quora.com/profile/Kristian-Georgiev-4">
+                    <img src="social-media-icons/quora-icon.png" alt="quora-account">
+                  </a>
+                  </div>
+           
+          </div>
+        </div>
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="footer-copyright">
