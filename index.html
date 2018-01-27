@@ -11,20 +11,20 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
   <div id="home">
-
   </div>
-  <nav class="white" role="navigation">
+  <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>        
-        <li><a href="#about">About Me</a></li>   
-        <li><a href="#contacts">Contact Me</a></li>   
-        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="logos/github-logo.png" style="margin-bottom:17%"> Github </a></li>                
+      <ul class="right hide-on-med-and-down" style="color:white">
+        <li><a href="#projects" style="color:white">Projects</a></li>
+        <li><a href="#blog" style="color:white">Blog</a></li>        
+        <li><a href="#about" style="color:white">About Me</a></li>   
+        <li><a href="#contacts" style="color:white">Contact Me</a></li>   
+        <li>  <a href="https://github.com/kristian-georgiev" class="github" style="color:white"><img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a></li>                
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -33,7 +33,6 @@
         <li><a href="#blog">Blog</a></li>        
         <li><a href="#about">About Me</a></li>   
         <li><a href="#contacts">Contact Me</a></li>   
-        <li> <a href="https://github.com/kristian-georgiev" class="github"><img type="image" align="middle" src="github-logo.png" style="margin-bottom:7%"> Github </a></li>                
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -57,19 +56,22 @@
     <div class="parallax"><img src="footage/background-grid-1.png" alt="Unsplashed background img 1"></div>
   </div>
 
+  <div class="center" style="position:relative">
+      <a class="arrow-wrap" href="#projects" style="position:absolute !important; bottom:0 !important">
+          <span class="arrow" ></span>
+          </a>
+  </div>
 
+  <div class="teal" style="height:100px"></div>
   <div class="container" id="projects">
 
-      <div class="center" style="position:relative">
-          <a class="arrow-wrap" href="#projects" style="position:absolute !important; bottom:0 !important">
-              <span class="arrow" ></span>
-              </a>
-      </div>
   
     <div class="section">
-  
-      <div style="height:300px">
-          stuff goes here
+      <div style="height:700px">
+
+        Projects.
+          <div class="github-widget" data-username="kristian-georgiev"></div>
+<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
       </div>
  
     </div>
@@ -81,19 +83,18 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="btn-large center waves-effect waves-ripple waves-light" style="font-size:20pt !important">Go to the blog</h5>
+          <h5 class="btn-large center waves-effect waves-ripple waves-light" style="text-transform:none !important; font-size:20pt !important;line-height: 34px !important ">A blog about math,<br> art and travel.</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background/bg1kristiangeorgiev1.jpg"  alt="Unsplashed background img 2" style="   max-width: 15%;
-      height: auto;"></div>
+    <div class="parallax"><img src="background/blog-background.png"  alt="Unsplashed background img 2" style="max-width:100%;height:auto"></div>
   </div>
   <div class="container" id="about">
     <div class="section">
 
       <div class="row">
           <div style="height:300px">
-              more stuff goes here
+              About
           </div>
      </div>
 
@@ -107,60 +108,62 @@
 
         <div class="row center" style="background-color:rgb(0,0,0,0.7);width:90%">
           <br><br>  
-          <h3>Contact Me</h3>
-          <div class="imagebg"></div>
-                <div class="form-container z-depth-5">
-                    <div class="row">
-                        <form class="col s12" id="reused_form">
-                            <h4 class="left-align light">Want to work together? Interested in what I do? Please find me here.</h4>
-                 
-                          <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="name" type="text" name="name" required class="validate">
-                                    <label for="name">Name</label>
-                                </div>
+          <h3 class="title">Contact Me</h3>
+          <p>Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write to me. </p>
+          <div class="container">
+              <div class="container">
+                  <div>
+                      <div class="row">
+                          <form class="col s12" id="reused_form">
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <input id="name" type="text" name="name" required class="validate">
+                                      <label for="name">Name</label>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <input id="email" type="email" name="email" required class="validate">
+                                      <label for="email">Email</label>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <textarea id="message" name="message" class="materialize-textarea" class="validate" style="line-height: 1.2em" ></textarea>
+                                      <label for="message">Message</label>
+                                  </div>
+                              </div>
+                              <div>
+                                  <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+                              </div>
+                          </form>
+                          <div id="error_message" style="width:100%; height:100%; display:none; ">
+                              <h4>
+                                  Error
+                              </h4>
+                              Sorry there was an error sending your form. 
+                          </div>
+                          <div id="success_message" style="width:100%; height:100%; display:none; ">
+                              <h4>
+                                  Success! Your Message was Sent Successfully.
+                              </h4>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="email" name="email" required class="validate">
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="message" name="message" class="materialize-textarea" class="validate" ></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="g-recaptcha" data-sitekey="6LeklkIUAAAAALVRWV2oqCRRaaks5Uo5lhliUwa-"></div> <br> <br>
- 
-                            <div>
-                                <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
-                            </div>
-                        </form>
-                        <div id="error_message" style="width:100%; height:100%; display:none; ">
-                            <h4>
-                                Error
-                            </h4>
-                            Sorry there was an error sending your form. 
                         </div>
-                        <div id="success_message" style="width:100%; height:100%; display:none; ">
-                            <h4>
-                                Success! Your Message was Sent Successfully.
-                            </h4>
-                        </div>
-                </div>
-            </div>
-            <!--Import jQuery before materialize.js-->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+                    </div>
+              </div>
+              <!--Import jQuery before materialize.js-->
+              <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          </div>
+  
+
+
         </div>
 
 
         </div>
       </div>
     
-    <div class="parallax"><img src="background/bg3kristiangeorgiev4.jpg" alt="Unsplashed background img 3" style="max-width:15%; height:auto"></div>
+    <div class="parallax"><img src="background/bg3kristiangeorgiev4.jpg" alt="Unsplashed background img 3" ></div>
   </div>
 </div>
   <footer class="page-footer teal">
