@@ -1,353 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kristian Georgiev's Webpage</title>
 
   <!-- CSS  -->
   <link rel="shortcut icon" href="logos/logo.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body>
+
+<body style="width:100%">
   <div id="home">
   </div>
-  <nav class="blue" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"></a>
-      <ul class="right hide-on-med-and-down" style="color:white">
-        <li><a href="#projects" style="color:white">Projects</a></li>
-        <li><a href="#about" style="color:white">About Me</a></li>   
-        <li><a href="#contacts" style="color:white">Contact Me</a></li>   
-        <li><a href="#blog" style="color:white">Blog</a></li>
-        <li>  <a href="https://github.com/kristian-georgiev" class="github right-align" style="color:white"><img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a></li>                
-      </ul>
+  <div class="navbar-fixed" style="position:fixed;">
+    <nav class="blue" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down" style="color:white">
+          <li>
+            <a href="#projects" style="color:white">Projects</a>
+          </li>
+          <li>
+            <a href="#about" style="color:white">About me</a>
+          </li>
+          <li>
+            <a href="#contacts" style="color:white">Contact me</a>
+          </li>
+          <li>
+            <a href="blog/blog.html" style="color:white">Blog</a>
+          </li>
+          <li>
+            <a href="https://github.com/kristian-georgiev" class="github right-align" style="color:white">
+              <img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a>
+          </li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Me</a></li>   
-        <li><a href="#contacts">Contact Me</a></li>   
-        <li><a href="#blog">Blog</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="side-nav">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About me</a>
+          </li>
+          <li>
+            <a href="#contacts">Contact me</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons white-text">menu</i>
+        </a>
+      </div>
 
-  <div id="index-banner" class="parallax-container" style="min-height:70vh">
-    <div class="section no-pad-bot">
-      <div class="container center">
-        <br><br>
+
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/office.jpg">
+            </div>
+            <a href="#!user">
+              <img class="circle" src="images/yuna.jpg">
+            </a>
+            <a href="#!name">
+              <span class="white-text name">John Doe</span>
+            </a>
+            <a href="#!email">
+              <span class="white-text email">jdandturk@gmail.com</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <a href="#!">
+            <i class="material-icons">cloud</i>First Link With Icon</a>
+        </li>
+        <li>
+          <a href="#!">Second Link</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a class="subheader">Subheader</a>
+        </li>
+        <li>
+          <a class="waves-effect" href="#!">Third Link With Waves</a>
+        </li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+
+
+
+    </nav>
+  </div>
+
+  <div style="padding-top:60px">
+
+    <div id="index-banner" class="parallax-container" style="min-height:70vh">
+      <div class="section no-pad-bot">
+        <div class="container center">
+          <br>
+          <br>
           <div class="center" style="margin-top:15%;vertical-align:center;">
-              <h1 class="center blue lighten-1"  
-              style="vertical-align:center; padding-top:0.3%; padding-right:1%; padding-left:1%; padding-bottom:1%; display:inline; background-color:rgb(33,150,243,0.87) !important">
+            <h2 class="center blue lighten-1" style="vertical-align:center; padding-top:0.3%; padding-right:1%; padding-left:1%; padding-bottom:1%; display:inline; background-color:rgb(33,150,243,0.87) !important">
               Hey, I'm Kris.
-          </h1>
- 
-          </div>     
-          <br><br>      
+            </h2>
+
+          </div>
+          <br>
+          <br>
         </div>
 
+      </div>
+      <div class="parallax">
+        <img src="background/background-grid-1.png" alt="Unsplashed background img 1">
+      </div>
     </div>
-    <div class="parallax"><img src="background/background-grid-1.png" alt="Unsplashed background img 1"></div>
-  </div>
 
-  <div class="center" style="position:relative">
+    <div class="center" style="position:relative">
       <a class="arrow-wrap blue" href="#projects" style="position:absolute !important; bottom:0 !important">
-          <span class="arrow blue" ></span>
-          </a>
-  </div>
+        <span class="arrow blue"></span>
+      </a>
+    </div>
 
-  <div class="blue" style="height:20vh"></div>
-  <div class="container" id="projects">
+    <div class="blue" style="height:20vh"></div>
+    <div id="projects" style="margin-top:-50px;visibility:hidden"></div>
+    <br>
+    <br>
+    <div class="container">
 
-  
-    <div class="section">
-<blockquote class="title" style="font-size:3rem;font-weight:bold">
-  Projects
-</blockquote>
+      <div class="section">
+        <blockquote class="title" style="font-size:3rem;font-weight:bold">
+          Projects
+        </blockquote>
 
-<div class="row center">
-    <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-<h3 >
-    Projects in pure mathematics
-</h3>
-<hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-        <div class="col 6 s12 m6">
-            <div class="card" >
-                <div class="card-image waves-effect waves-block waves-light" >
-                  <div class="card-title blue-grey activator abstract waves-light"
-                   style="opacity:0.87;position:absolute;width:100%;top:0;">
-    <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the abstract</p>
-                </div>
-                  <img class="activator" src="footage/wolff.jpg" alt="wolff-construction" style="vertical-align:center">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in $\mathbb{F}^n$ satisfying the Wolff axiom</span>
-                  <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
-                  <p class="card-title" align=left style="font-size:1rem !important">	The paper deals with finding unions of lines in $\mathbb{F}_{p^{2k}}^{n}$ which obey the Wolff axiom and have minimal size.
-                     We provide an extension of the constructions for $\mathbb{F}_{p^{2k}}^3$, obtained by Tao in 2002, to a construction
-                      for $\mathbb{F}_{p^{2k}}^n$. We determine the size of the union of lines in our construction in $\mathbb{F}_{p^{2k}}^n$ 
-                      to be $O\left(p^{1.6kn}\right)$. We prove that our construction obeys the Wolff axiom up to a heuristically negligible 
-                      number of lines.
-                    </p>
-                    <span class="card-title grey-text text-darken-4">Summary</span>
-                    <p class="card-title" align=left style="font-size:1rem !important">
-                    In our project, we examine sets of lines in certain classical objects in abstract algebra. 
-                    The goal is to evaluate the minimal size of sets of lines which satisfy certain conditions formulated by Thomas Wolff in 1995.
-                     We do that by determining the smallest possible surface that contains the whole set of lines. We find a general form of that
-                      surface in $n$ dimensions, which has applications in physics. It turns out that the size of our set is significantly smaller
-                       than expected. This result may give helpful insight on how to approach problems with similar formulation. 
-                    </p>
-                    <span class="card-title grey-text text-darken-4">My involvement</span>
-                    <p class="card-title" align=left style="font-size:1rem !important">
-                    I developed the project in the summer of 2015 during <a href="https://www.cee.org/research-science-institute">RSI</a>,
-                     an intensive and rigorous summer research school organized by <a href="https://www.cee.org/">CEE</a>. I later took part in
-                     the final round of <a href="https://student.societyforscience.org/intel-isef">Intel ISEF</a>, the world’s largest 
-                     international pre-college science competition.
-                    </p>
-                    <p><a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a></p>
-                </div>
-              </div>   
-        </div>
-
-  <div class="col 6 s12 m6">
-      <div class="card" >
-          <div class="card-image waves-effect waves-block waves-light" >
-            <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus" style="vertical-align:center" >
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds obtained by the identification of the edges of $2n$-gons</span>
-            <p><a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Abstract<i class="material-icons right">close</i></span>
-            <p align=left>The project belongs to the field of topology. More specifically, the identification (gluing) of the edges of $2n$-gons is analyzed. 
-              We prove that the resulting manifold is a topological surface. A classification of compact surfaces is presented. 
-              A conjecture regarding the number of ways to obtain an arbitrary manifold from $2n$-gon is constructed. The author’s contributions
-               consist of constructing a conjecture regarding the number of ways to obtain an arbitrary manifold from $2n$-gon, as well as computing
-                the number of configurations of the edges of a $2n$-gon forming a
-                 sphere, a torus, a $\mathbb{R}P^2$ and a Klein bottle, thus proving 
-                the author’s conjecture true for the mentioned manifolds.
-              </p>
-              <span class="card-title grey-text text-darken-4">My involvement</span>
-              <p align=left>
-                  I started developing this project in the summer of 2014 at <a href="http://www.math.bas.bg/omi/hssimi/?lang=en">HSSIMI</a> - a summer
-                  research school held at Blagoevgrad, Bulgaria under the guidance of Katerina Velcheva, Stanford. Afterwards, I continued working on the topic
-                  under the guidance of Peter Kopanov, Plovdiv University. The culmination of the project was having the honor to present it at the 27th edition
-                   of <a href="http://www.eucys2015.eu/">EUCYS</a>, the largest science fair for high school students in Europe.
-                  </p>
-
-                <p><a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a></p>
-
-          </div>
-        </div>   
-  </div>
-
-</div>  <!-- end of first row -->
-
-      
-<div class="row center">
-    <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-<h3 >
-    Projects in CS & Machine Learning
-</h3>
-<hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-
-  <div class="col 6 s12 m6">
-      <div class="card" >
-          <div class="card-image waves-effect waves-block waves-light" >
-            <img class="activator" src="footage/tile_1.png" alt="wolff-construction" style="max-height:100%">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Results on Tilings with Walkup Structure and Their
-                Properties</span>
-           
-            <p><a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a></p>
-            <p><a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">My involvement<i class="material-icons right">close</i></span>
-            <p>Although the project is mathematical in nature, my contribution consisted solely
-              of developing dynamic geometric tool in C# to make the process of visualizing the tilings of polyiamonds less tedious.
-            </p>
-            <p><a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a></p>
-            <p><a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a></p>
-
-          </div>
-        </div>   
-  </div>
-
-
-</div>  <!-- end of second row -->
-
-      
-      <div class="row center">
+        <div class="row center">
           <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-      <h3 >
-          Smaller Projects for Fun
-      </h3>
-      <hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
-      
-        <div class="col 6 s12 m6">
+          <h3>
+            Projects in pure mathematics
+          </h3>
+          <hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+          <div class="col 6 s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the abstract</p>
+                </div>
+                <img class="activator" src="footage/wolff.jpg" alt="wolff-construction" style="vertical-align:center">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in $\mathbb{F}^n$ satisfying the Wolff axiom</span>
+                <p>
+                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Abstract
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important"> The paper deals with finding unions of lines in $\mathbb{F}_{p^{2k}}^{n}$ which obey the Wolff axiom and
+                  have minimal size. We provide an extension of the constructions for $\mathbb{F}_{p^{2k}}^3$, obtained by
+                  Tao in 2002, to a construction for $\mathbb{F}_{p^{2k}}^n$. We determine the size of the union of lines
+                  in our construction in $\mathbb{F}_{p^{2k}}^n$ to be $O\left(p^{1.6kn}\right)$. We prove that our construction
+                  obeys the Wolff axiom up to a heuristically negligible number of lines.
+                </p>
+                <span class="card-title grey-text text-darken-4">Summary</span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  In our project, we examine sets of lines in certain classical objects in abstract algebra. The goal is to evaluate the minimal
+                  size of sets of lines which satisfy certain conditions formulated by Thomas Wolff in 1995. We do that by
+                  determining the smallest possible surface that contains the whole set of lines. We find a general form
+                  of that surface in $n$ dimensions, which has applications in physics. It turns out that the size of our
+                  set is significantly smaller than expected. This result may give helpful insight on how to approach problems
+                  with similar formulation.
+                </p>
+                <span class="card-title grey-text text-darken-4">My involvement</span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  I developed the project in the summer of 2015 during
+                  <a href="https://www.cee.org/research-science-institute">RSI</a>, an intensive and rigorous summer research school organized by
+                  <a href="https://www.cee.org/">CEE</a>. I later took part in the final round of
+                  <a href="https://student.societyforscience.org/intel-isef">Intel ISEF</a>, the world’s largest international pre-college science competition.
+                </p>
+                <p>
+                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col 6 s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:30%;text-align:center">Click to read the abstract</p>
+                </div>
+                <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus" style="vertical-align:center">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds obtained by the identification of the edges of $2n$-gons</span>
+                <p>
+                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Abstract
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important">The project belongs to the field of topology. More specifically, the identification (gluing) of the edges
+                  of $2n$-gons is analyzed. We prove that the resulting manifold is a topological surface. A classification
+                  of compact surfaces is presented. A conjecture regarding the number of ways to obtain an arbitrary manifold
+                  from $2n$-gon is constructed. The author’s contributions consist of constructing a conjecture regarding
+                  the number of ways to obtain an arbitrary manifold from $2n$-gon, as well as computing the number of configurations
+                  of the edges of a $2n$-gon forming a sphere, a torus, a $\mathbb{R}P^2$ and a Klein bottle, thus proving
+                  the author’s conjecture true for the mentioned manifolds.
+                </p>
+                <span class="card-title grey-text text-darken-4">My involvement</span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  I started developing this project in the summer of 2014 at
+                  <a href="http://www.math.bas.bg/omi/hssimi/?lang=en">HSSIMI</a> - a summer research school held at Blagoevgrad, Bulgaria under the guidance of Katerina Velcheva,
+                  Stanford. Afterwards, I continued working on the topic under the guidance of Peter Kopanov, Plovdiv University.
+                  The culmination of the project was having the honor to present it at the 27th edition of
+                  <a href="http://www.eucys2015.eu/">EUCYS</a>, the largest science fair for high school students in Europe.
+                </p>
+
+                <p>
+                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of first row -->
+
+
+        <div class="row center">
+          <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+          <h3>
+            Projects in CS & Machine Learning
+          </h3>
+          <hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+
+          <div class="col 6 s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the abstract</p>
+                </div>
+                <img class="activator" src="footage/tile_1.png" alt="wolff-construction" style="max-height:100%">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Results on Tilings with Walkup Structure and Their Properties
+                </span>
+
+                <p>
+                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">My involvement
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important">Although the project is mathematical in nature, my contribution consisted solely of developing dynamic geometric
+                  tool in C# to make the process of visualizing the tilings of polyiamonds less tedious.
+                </p>
+                <p>
+                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
+                </p>
+                <div class="card-title" style="height:30%"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of second row -->
+
+
+        <div class="row center">
+          <hr class="blue" style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+          <h3>
+            Smaller Projects for Fun
+          </h3>
+          <hr style="color:#EE6E73;border-color:#EE6E73;background-color:#EE6E73;">
+
+          <div class="col 6 s12 m6">
 
             <div class="card ">
-                <div class="card-content">
-                    <span class="card-title grey-text text-darken-4">Anything not listed above can be found on my Github page.</span>
-                  </div>
+              <div class="card-content">
+                <span class="card-title grey-text text-darken-4">Anything not listed above can be found on my Github page.</span>
+              </div>
 
               <div class="card-content ">
-                  <div class="github-widget center" data-username="kristian-georgiev" style="display: inline-block;"></div>
-                  <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-            
-                </div>
-                  
-          </div>
-      
-        </div>
-      
+                <div class="github-widget center" data-username="kristian-georgiev" style="display: inline-block;"></div>
+                <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 
-
-            </div>  <!-- end of third row -->
-      
-      
-
-    </div>
- <!-- end of section -->
-    </div>
-<!-- end of container -->
-
-
-  <div class="parallax-container valign-wrapper blue" , id="blog" style="min-height:80vh">
-  
-    <div class="section no-pad-bot">
-  <div class="container" id="about" style="min-height:75vh">
-    <div class="section">
-      <div class="row">
-        <blockquote class="title" style="font-size:40px;font-weight:bold">
-          About me
-        </blockquote>
-  
-  
-        <!-- end of col -->
-        <div class="col 6 s12">
-          <div class="card horizontal text-dark">
-  
-            <div class="card-stacked text-dark">
-              <div class="card-content text-darken-1">
-                <h5>I am an undergraduate student at MIT, pursuing a degree in Mathematics with Computer Science. My academic interests
-                  are in the fields of abstract algebra, theoretical computer science, theory of computation, artificial intelligence
-                  and deep learning.
-                </h5>
-                <h5>
-                  I am originally from Bulgaria. Apart from academics, I spend lots of time exploring art, music and food.
-                </h5>
               </div>
-              <div class="card-action">
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <!-- end of third row -->
+
+
+
+      </div>
+      <!-- end of section -->
+    </div>
+    <!-- end of container -->
+
+    <div id="about" style="margin-top:50px;height:50px"></div>
+
+    <div class="parallax-container valign-wrapper blue" style="min-height:60vh">
+
+      <div class="section no-pad-bot">
+        <div class="container" id="about" style="min-height:60vh;position:relative;top:0%">
+          <div class="section">
+            <div class="row">
+              <blockquote class="title" style="font-size:2rem;font-weight:bold">
+                About me
+              </blockquote>
+
+
+              <!-- end of col -->
+              <div class="col 6 s12">
+                <div class="card horizontal text-dark">
+
+                  <div class="card-stacked text-dark">
+                    <div class="card-content grey-text text-darken-4">
+                      <p class="card-title">I am an undergraduate student at MIT, pursuing a degree in Mathematics with Computer Science. My academic
+                        interests are in the fields of abstract algebra, theoretical computer science, theory of computation,
+                        artificial intelligence and deep learning.
+                      </p>
+                      <p class="card-title">
+                        I am originally from Bulgaria. Apart from academics, I spend lots of time exploring art, music and food.
+                      </p>
+                    </div>
+                    <div class="card-action">
+                      <div class="card-content">
+
+                        <span class="card-title grey-text text-darken-4">
+                          <a href="https://drive.google.com/open?id=1-yclw8uBqGI6iqK2wBb8br-OavayFxFG" target="_blank">
+                            A link to my resume.</a>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of col -->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="contacts" style="margin-top:-50px;visibility:hidden"></div>
+    <br>
+    <br>
+    <div class="container" style="min-height:40vh">
+      <div class="section">
+        <div class="row">
+          <blockquote class="title" style="font-size:40px;font-weight:bold">
+            Contact me
+          </blockquote>
+
+
+          <!-- end of col -->
+          <div class="col 6 s12">
+            <div class="card horizontal">
+
+              <div class="card-stacked">
                 <div class="card-content">
-  
-                  <span class="card-title grey-text text-darken-4">
-                    <a href="https://drive.google.com/open?id=1-yclw8uBqGI6iqK2wBb8br-OavayFxFG" target="_blank">
-                      A link to my resume.</a>
-                  </span>
+                  <p class="card-title">Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write
+                    to me at
+                    <a href="mailto:krisgrg@mit.edu">krisgrg
+                      <span style="color:teal;font-size:.75em"> at </span>mit.edu</a>.
+
+                  </p>
                 </div>
+
               </div>
-  
             </div>
+
           </div>
-  
+          <!-- end of col -->
+
         </div>
-        <!-- end of col -->
-  
+
       </div>
-  
     </div>
-  </div>   </div>
+
+
   </div>
-
-
-
-
-  <div class="container" id="contacts" style="min-height:75vh">
-    <div class="section">
-      <div class="row">
-        <blockquote class="title" style="font-size:40px;font-weight:bold">
-          Contact me
-        </blockquote>
-  
-  
-        <!-- end of col -->
-        <div class="col 6 s12">
-          <div class="card horizontal">
-  
-            <div class="card-stacked">
-              <div class="card-content">
-                <h5>Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write to me at
-                <a href="mailto:krisgrg@mit.edu">krisgrg<span style="color:teal;font-size:.75em"> at </span>mit.edu</a>.
-
-                </h5>
-              </div>
-  
-            </div>
-          </div>
-  
-        </div>
-        <!-- end of col -->
-  
-      </div>
-  
-    </div>
-  </div>
-
-  
-</div>
   <footer class="page-footer blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <a  href="https://youtu.be/Q8gcU5PwWlU?t=40s" target="_blank">
-          <img src="footage/rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt"> 
-        </a>
+          <a href="https://youtu.be/Q8gcU5PwWlU?t=40s" target="_blank">
+            <img src="footage/rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt">
+          </a>
           <p class="grey-text text-lighten-4"> Let's go. In and out. 20 minutes. </p>
         </div>
-      <div class="col l3 s12">
-      </div>
-
         <div class="col l3 s12">
-          <blockquote> <h5>Social media</h5></blockquote>
-            <div>
-                <a href="https://www.facebook.com/kristian.georgieff" target="_blank">
-                <img src="social-media-icons/fb-icon.png" alt="facebook-account" style="margin-right:10%">
-              </a>
-                  <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/" target="_blank">
-                  <img src="social-media-icons/linkedin-icon.png" alt="linkedin-account" style="margin-right:10%">
-                </a>
-                    <a href="https://www.quora.com/profile/Kristian-Georgiev-4" target="_blank">
-                    <img src="social-media-icons/quora-icon.png" alt="quora-account">
-                  </a>
-                  </div>
-           
-          </div>
         </div>
 
+        <div class="col l3 s12">
+          <blockquote>
+            <h5>Social media</h5>
+          </blockquote>
+          <div>
+            <a href="https://www.facebook.com/kristian.georgieff" target="_blank">
+              <img src="social-media-icons/fb-icon.png" alt="facebook-account" style="margin-right:10%">
+            </a>
+            <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/" target="_blank">
+              <img src="social-media-icons/linkedin-icon.png" alt="linkedin-account" style="margin-right:10%">
+            </a>
+            <a href="https://www.quora.com/profile/Kristian-Georgiev-4" target="_blank">
+              <img src="social-media-icons/quora-icon.png" alt="quora-account">
+            </a>
+          </div>
+
+        </div>
       </div>
+
+    </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">      
-      <p style="text-align:left;">
-         Made with &hearts;. Many thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a>!
-        <span style="float:right;">Last modified <script>document.write(document.lastModified);</script> </span>
-      </p>
+      <div class="container">
+        <p style="text-align:left;">
+          Made with &hearts;. Many thanks to
+          <a class="brown-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a>!
+          <span style="float:right;">Last modified
+            <script>document.write(document.lastModified);</script> </span>
+        </p>
       </div>
     </div>
   </footer>
 
-
+  </div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -357,5 +475,6 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  </body>
+</body>
+
 </html>
