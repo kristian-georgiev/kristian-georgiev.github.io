@@ -39,34 +39,38 @@
           </li>
         </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#about">About me</a>
-          </li>
-          <li>
-            <a href="#contacts">Contact me</a>
-          </li>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse">
-          <i class="material-icons white-text">menu</i>
-        </a>
       </div>
-
-
- 
-
 
     </nav>
   </div>
+
+
+  <nav class="blue" role="navigation">
+    <div class="nav-wrapper container" >
+
+      <ul id="nav-mobile" class="side-nav">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a onclick="closeNav()" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About me</a>
+        </li>
+        <li>
+          <a href="#contacts">Contact me</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="material-icons white-text">menu</i>
+      </a>
+    </div>
+  </nav>
+
 
   <div>
 
@@ -295,9 +299,9 @@
 
     <div class="parallax-container valign-wrapper blue" style="min-height:60vh">
 
-      <div class="section no-pad-bot">
+      <div class="section no-pad-bot" style="position:relative">
         <div class="container" id="about" style="min-height:60vh;position:relative;top:0%">
-          <div class="section">
+          <div class="section" style="position:relative">
             <div class="row">
               <blockquote class="title" style="font-size:2rem;font-weight:bold">
                 About me

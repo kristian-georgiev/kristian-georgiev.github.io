@@ -42,4 +42,9 @@ $(window).scroll( function(){
 
 });
 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("nav-mobile").style.display = "none";
+}
+
 
