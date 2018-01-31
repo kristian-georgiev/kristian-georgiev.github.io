@@ -111,6 +111,6 @@ footer.page-footer {
   display: none;
 }
 
-.card:hover .card:active .abstract {
+.card:hover .abstract {
   display: block;
 }
