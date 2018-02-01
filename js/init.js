@@ -10,7 +10,7 @@
 $('a[href^="#"]').on('click', function(event) {
 
   var target = $(this.getAttribute('href'));
-
+  target
   if( target.length ) {
       event.preventDefault();
       $('html, body').stop().animate({
