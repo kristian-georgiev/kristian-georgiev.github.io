@@ -16,12 +16,14 @@
 
 .text-overlay-text
 {
+  position: absolute;
   font-size: 4.3rem;
   white-space: nowrap;
   color: #2196F2;
 }
 .text-overlay-text-small
 {
+  position: absolute;
   font-size: 1.3rem;
   white-space: nowrap;
   color: #2196F2;
