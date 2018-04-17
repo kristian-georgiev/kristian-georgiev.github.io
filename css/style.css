@@ -7,7 +7,6 @@
  */
 
 
-
 .text-overlay
 {
   position: absolute;
@@ -15,13 +14,13 @@
   transform: translate(-50%, -50%);
 }
 
-.text-overlay h1
+.text-overlay-text
 {
   font-size: 4.3rem;
   white-space: nowrap;
   color: #2196F2;
 }
-.text-overlay h6
+.text-overlay-text-small
 {
   font-size: 1.3rem;
   white-space: nowrap;
