@@ -6,6 +6,34 @@
  * Made By MaterializeCSS.com
  */
 
+
+
+.text-overlay
+{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-overlay h1
+{
+  font-size: 4.3rem;
+  white-space: nowrap;
+  color: #2196F2;
+}
+.text-overlay h6
+{
+  font-size: 1.3rem;
+  white-space: nowrap;
+  color: #2196F2;
+}
+
+
+ #particles-js
+ {
+   max-height: 70%;
+ }
+
  .github a {
   background-image:url("github.png") !important;
   background-repeat: no-repeat;
