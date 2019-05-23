@@ -6,6 +6,14 @@
  * Made By MaterializeCSS.com
  */
 
+ .overall-wrapper {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-scrolled {
+  scroll-snap-align: start;
+}
+
 
 .text-overlay
 {
@@ -70,7 +78,7 @@ p {
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
+    /* position: absolute; */
     top: 40%;
   }
   #index-banner .section {
@@ -143,3 +151,4 @@ footer.page-footer {
 .card:hover .abstract {
   display: block;
 }
+

@@ -20,10 +20,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/cards.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <!-- Home Section -->
-
 
 
 <body style="width:100%">
@@ -34,26 +34,23 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"></a>
         <ul class="right hide-on-med-and-down" style="color:white">
-            <li>
+          <li>
             <a href="#projects" style="color:white">Projects</a>
           </li>
           <li>
-            <a href="#about" style="color:white">About me</a>
+            <a href="#classes" style="color:white">Classes</a>
           </li>
           <li>
             <a href="#contacts" style="color:white">Contact me</a>
           </li>
-          <li>
-            <a href="blog/index.html" style="color:white">Blog</a>
-          </li>
-          <li>
+          <!-- <li>
             <a href="https://github.com/kristian-georgiev" target="_blank" class="github right-align" style="color:white">
               <img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a>
-            </li>
-          </ul>
+            </li> -->
+        </ul>
 
-          
-          <ul id="nav-mobile" class="side-nav">
+
+        <ul id="nav-mobile" class="side-nav">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -61,220 +58,296 @@
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">About me</a>
+            <a href="#classes">Classes</a>
           </li>
           <li>
             <a href="#contacts">Contact me</a>
-          </li>
-          <li>
-            <a href="#blog">Blog</a>
           </li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse">
           <i class="material-icons white-text">menu</i>
         </a>
       </div>
-      
+
     </nav>
   </div>
-    
-  <!-- Home parallax banner -->
-  
-<div id="particles-js" style="min-height: 90vh">
-    <div class="text-overlay">
-      <h3 id="text-overlay-text" class="center" style="color:#2196F2">Hey, I'm Kris</h3 >
-        <h6 id="text-overlay-text-small" class="center" style="color:#2196F2">
-            I'm a Math & CS student at MIT, interested in machine learning.
-          </h6>
+
+  <!-- for scroll snapping purposes -->
+  <div class="overall-wrapper">
+
+    <!-- home (about me) section -->
+    <div id="home" style="height:50px"></div>
+
+    <div class="container snap-scrolled" style="min-height:40vh;">
+      <div class="section">
+        <div class="row">
+          <blockquote class="title" style="font-size:40px;font-weight:bold">
+            Kristian Georgiev
+          </blockquote>
+          <blockquote style="font-size:20px">
+            MIT Class of 2021, Mathematics & Computer Science
+          </blockquote>
+
+
+          <!-- end of col -->
+          <div class="col 6 s12">
+            <div class="card horizontal">
+
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am an pursuing a double degree in Mathematics and Computer Science. 
+                    
+                    My academic interests are in the fields of abstract algebra, discrete mathematics, theoretical computer science,
+                    artificial intelligence and deep learning.
+                  </p>
+                  <p>
+                    I am originally from Bulgaria. Apart from academics, I spend lots of time exploring music and food.
+                  </p>
+                  <span class="grey-text text-darken-4">
+                    <a href="https://drive.google.com/file/d/1tWEtQ-6ZqF8U6VfNlTvl9SEO155molmV/view?usp=sharing"
+                      target="_blank">
+                      A link to my resume.</a>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- end of col -->
+
         </div>
+
       </div>
-      
-      
-      <!-- <div id="index-banner" class="  container" style="min-height:70vh">
-  </div> -->
-
-
-
-    <div class="center" style="position:relative">
-      <a class="arrow-wrap blue" href="#projects" style="position:absolute !important; bottom:0 !important">
-        <span class="arrow blue"></span>
-      </a>
     </div>
 
-    <div class="blue" style="height:20vh"></div>
 
     <!-- Projects section -->
 
     <div id="projects" style="height:50px"></div>
-    <div class="container">
+    <div class="container snap-scrolled">
 
       <div class="section">
         <blockquote class="title" style="font-size:3rem;font-weight:bold">
           Projects
         </blockquote>
-
-        <div class="row center">
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <h3>
-            Projects in pure mathematics
-          </h3>
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <div class="col 6 s12 m6">
+        <div class="row">
+          <div class="col s12 cards-container">
             <div class="card">
+              <!-- Wolff -->
               <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the abstract</p>
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
+                    abstract</p>
                 </div>
                 <img class="activator" src="footage/wolff.jpg" alt="wolff-construction" style="vertical-align:center">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in $\mathbb{F}^n$ satisfying the Wolff axiom</span>
+                <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in
+                  $\mathbb{F}^n$ satisfying the Wolff axiom</span>
                 <p>
-                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a>
+                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full
+                    paper</a>
                 </p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Abstract
                   <i class="material-icons right">close</i>
                 </span>
-                <p class="card-title" align=left style="font-size:1rem !important"> The paper deals with finding unions of lines in $\mathbb{F}_{p^{2k}}^{n}$ which obey the Wolff axiom and
-                  have minimal size. We provide an extension of the constructions for $\mathbb{F}_{p^{2k}}^3$, obtained by
-                  Tao in 2002, to a construction for $\mathbb{F}_{p^{2k}}^n$. We determine the size of the union of lines
-                  in our construction in $\mathbb{F}_{p^{2k}}^n$ to be $O\left(p^{1.6kn}\right)$. We prove that our construction
+                <p class="card-title" align=left style="font-size:1rem !important"> The paper deals with finding unions
+                  of lines in $\mathbb{F}_{p^{2k}}^{n}$ which obey the Wolff axiom and
+                  have minimal size. We provide an extension of the constructions for $\mathbb{F}_{p^{2k}}^3$, obtained
+                  by
+                  Tao in 2002, to a construction for $\mathbb{F}_{p^{2k}}^n$. We determine the size of the union of
+                  lines
+                  in our construction in $\mathbb{F}_{p^{2k}}^n$ to be $O\left(p^{1.6kn}\right)$. We prove that our
+                  construction
                   obeys the Wolff axiom up to a heuristically negligible number of lines.
                 </p>
                 <span class="card-title grey-text text-darken-4">Summary</span>
                 <p class="card-title" align=left style="font-size:1rem !important">
-                  In our project, we examine sets of lines in certain classical objects in abstract algebra. The goal is to evaluate the minimal
-                  size of sets of lines which satisfy certain conditions formulated by Thomas Wolff in 1995. We do that by
+                  In our project, we examine sets of lines in certain classical objects in abstract algebra. The goal is
+                  to evaluate the minimal
+                  size of sets of lines which satisfy certain conditions formulated by Thomas Wolff in 1995. We do that
+                  by
                   determining the smallest possible surface that contains the whole set of lines. We find a general form
-                  of that surface in $n$ dimensions, which has applications in physics. It turns out that the size of our
-                  set is significantly smaller than expected. This result may give helpful insight on how to approach problems
+                  of that surface in $n$ dimensions, which has applications in physics. It turns out that the size of
+                  our
+                  set is significantly smaller than expected. This result may give helpful insight on how to approach
+                  problems
                   with similar formulation.
                 </p>
                 <span class="card-title grey-text text-darken-4">My involvement</span>
                 <p class="card-title" align=left style="font-size:1rem !important">
                   I developed the project in the summer of 2015 during
-                  <a href="https://www.cee.org/research-science-institute">RSI</a>, an intensive and rigorous summer research school organized by
+                  <a href="https://www.cee.org/research-science-institute">RSI</a>, an intensive and rigorous summer
+                  research school organized by
                   <a href="https://www.cee.org/">CEE</a>. I later took part in the final round of
-                  <a href="https://student.societyforscience.org/intel-isef">Intel ISEF</a>, the world’s largest international pre-college science competition.
+                  <a href="https://student.societyforscience.org/intel-isef">Intel ISEF</a>, the world’s largest
+                  international pre-college science competition.
                 </p>
                 <p>
-                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full paper</a>
+                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full
+                    paper</a>
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="col 6 s12 m6">
             <div class="card">
+              <!-- topology -->
               <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:30%;text-align:center">Click to read the abstract</p>
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:30%;text-align:center">Click to read the
+                    abstract</p>
                 </div>
-                <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus" style="vertical-align:center">
+                <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus"
+                  style="vertical-align:center">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds obtained by the identification of the edges of $2n$-gons</span>
+                <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds
+                  obtained by the identification of the edges of $2n$-gons</span>
                 <p>
-                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a>
+                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing"
+                    target="_blank">Read full paper (not published)</a>
                 </p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Abstract
                   <i class="material-icons right">close</i>
                 </span>
-                <p class="card-title" align=left style="font-size:1rem !important">The project belongs to the field of topology. More specifically, the identification (gluing) of the edges
-                  of $2n$-gons is analyzed. We prove that the resulting manifold is a topological surface. A classification
-                  of compact surfaces is presented. A conjecture regarding the number of ways to obtain an arbitrary manifold
-                  from $2n$-gon is constructed. The author’s contributions consist of constructing a conjecture regarding
-                  the number of ways to obtain an arbitrary manifold from $2n$-gon, as well as computing the number of configurations
-                  of the edges of a $2n$-gon forming a sphere, a torus, a $\mathbb{R}P^2$ and a Klein bottle, thus proving
+                <p class="card-title" align=left style="font-size:1rem !important">The project belongs to the field of
+                  topology. More specifically, the identification (gluing) of the edges
+                  of $2n$-gons is analyzed. We prove that the resulting manifold is a topological surface. A
+                  classification
+                  of compact surfaces is presented. A conjecture regarding the number of ways to obtain an arbitrary
+                  manifold
+                  from $2n$-gon is constructed. The author’s contributions consist of constructing a conjecture
+                  regarding
+                  the number of ways to obtain an arbitrary manifold from $2n$-gon, as well as computing the number of
+                  configurations
+                  of the edges of a $2n$-gon forming a sphere, a torus, a $\mathbb{R}P^2$ and a Klein bottle, thus
+                  proving
                   the author’s conjecture true for the mentioned manifolds.
                 </p>
                 <span class="card-title grey-text text-darken-4">My involvement</span>
                 <p class="card-title" align=left style="font-size:1rem !important">
                   I started developing this project in the summer of 2014 at
-                  <a href="http://www.math.bas.bg/omi/hssimi/?lang=en">HSSIMI</a> - a summer research school held at Blagoevgrad, Bulgaria under the guidance of Katerina Velcheva,
-                  Stanford. Afterwards, I continued working on the topic under the guidance of Peter Kopanov, Plovdiv University.
+                  <a href="http://www.math.bas.bg/omi/hssimi/?lang=en">HSSIMI</a> - a summer research school held at
+                  Blagoevgrad, Bulgaria under the guidance of Katerina Velcheva,
+                  Stanford. Afterwards, I continued working on the topic under the guidance of Peter Kopanov, Plovdiv
+                  University.
                   The culmination of the project was having the honor to present it at the 27th edition of
-                  <a href="http://www.eucys2015.eu/">EUCYS</a>, the largest science fair for high school students in Europe.
+                  <a href="http://www.eucys2015.eu/">EUCYS</a>, the largest science fair for high school students in
+                  Europe.
                 </p>
 
                 <p>
-                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing" target="_blank">Read full paper (not published)</a>
+                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing"
+                    target="_blank">Read full paper (not published)</a>
                 </p>
 
               </div>
             </div>
-          </div>
-
-        </div>
-        <!-- end of first row -->
-
-
-        <div class="row center">
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <h3>
-            Projects in CS & Machine Learning
-          </h3>
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <div class="col 6 s12 m6">
             <div class="card">
+              <!-- 18.200 -->
               <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the abstract</p>
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
+                    abstract</p>
                 </div>
-                <img class="activator" src="footage/tile_1.png" alt="wolff-construction" style="max-height:100%">
+                <img class="activator" src="footage/18.200-paper.png" alt="dyck-path" style="vertical-align:center">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Results on Tilings with Walkup Structure and Their Properties
-                </span>
-
+                <span class="card-title activator grey-text text-darken-4">On Sequences of Coin Tosses with Different
+                  Stopping Conditions</span>
                 <p>
-                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
+                  <a href="https://drive.google.com/file/d/17KhbIpHssDi9tfWt5KyLQRI9Zzj0Jz_g/view?usp=sharing"
+                    target="_blank">Read full paper</a>
                 </p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">My involvement
+                <span class="card-title grey-text text-darken-4">Abstract
                   <i class="material-icons right">close</i>
                 </span>
-                <p class="card-title" align=left style="font-size:1rem !important">Although the project is mathematical in nature, my contribution consisted solely of developing dynamic geometric
-                  tool in C# to make the process of visualizing the tilings of polyiamonds less tedious.
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  We examine the random process of tossing a coin an arbitrary number of times, stopping as soon as the
+                  number of tails is greater than the number of heads.
+                  We find a generating function, closed-form formula for the probability and expectation of the number
+                  of performed tosses. We then explore a number of generalizations.
+                  First, we examine how the bias of the coin affects the expected number of tosses. Then we consider
+                  stopping conditions of the form "stop as soon as there are $k$ more
+                  tails than heads" for all non-negative $k$. Finally, we present computer simulations to illustrate the
+                  results.
+                </p>
+                <span class="card-title grey-text text-darken-4">My involvement</span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  I developed this expository paper in the spring of 2018 for the undergraduate MIT course 18.200 -
+                  Principles of Discrete Applied Mathematics.
                 </p>
                 <p>
-                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf" target="_blank">View conference abstract</a>
+                  <a href="https://drive.google.com/file/d/17KhbIpHssDi9tfWt5KyLQRI9Zzj0Jz_g/view?usp=sharing"
+                    target="_blank">Read full paper</a>
                 </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
-                </p>
-                <div class="card-title" style="height:30%"></div>
               </div>
             </div>
-          </div>
-
-
-        </div>
-        <!-- end of second row -->
-
-
-        <div class="row center">
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <h3>
-            Smaller Projects for Fun
-          </h3>
-          <hr noshade class="blue" style="height:0.2rem;border-width:0px">
-          <div class="col 6 s12 m6">
-
             <div class="card">
+              <!-- 18.303 -->
               <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light" style="opacity:0.87;position:absolute;width:100%;top:0;">
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
+                    abstract</p>
+                </div>
+                <img class="activator" src="footage/kde.png" alt="kde-smoothing-of-MC-approximation"
+                  style="vertical-align:center">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Monte Carlo Methods for P(I)DEs: Feynman-Kac
+                  for Jump-Diffusions</span>
+                <p>
+                  <a href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
+                    target="_blank">Read full paper</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Abstract
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important"> Continuous time Markov processes are
+                  heavily used to approximate solutions to parabolic
+                  and elliptic partial differential equations. In this paper, we examine the role of the Feynman-Kac
+                  formula in the aforementioned approximation.
+                  We present the classical results for linear parabolic equations. Then we generalize the method for
+                  stochastic processes with discrete jump discontinuities.
+                  Via Fokker-Planck's equation we show that this class of SDEs is the codomain of a more general class
+                  of partial integro-differential equations under
+                  Feynman-Kac's transformation. We utilize a jump-adapted Euler-Maruyama scheme to approximate the
+                  evolution of jump-diffusions. Finally, we analyze
+                  the weak and strong convergence properties of the implemented methods.
+
+                </p>
+                <span class="card-title grey-text text-darken-4">My involvement</span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  I developed this expository paper in the spring of 2019 for the MIT undergraduate class 18.303: Linear
+                  Partial Differential Equations: Analysis and Numerics.
+                </p>
+                <p>
+                  <a href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
+                    target="_blank">Read full paper</a>
+                </p>
+              </div>
+            </div>
+            <div class="card small">
+              <!-- dorm room -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
                   <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read more</p>
                 </div>
-                <img class="activator" src="footage/workspace.jpg" alt="photo of the workspace setup" style="max-height:100%">
+                <img class="activator" src="footage/workspace.jpg" alt="photo of the workspace setup"
+                  style="max-height:100%">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Dorm Room Automation System </span>
@@ -288,17 +361,21 @@
                   <i class="material-icons right">close</i>
                 </span>
                 <p class="card-title" align=left style="font-size:1rem !important">
-                  I noticed that my routine is quite repetitive and I can automate some mundane tasks like playing music on different platforms,
+                  I noticed that my routine is quite repetitive and I can automate some mundane tasks like playing music
+                  on different platforms,
                   maintaing alarms, calendars and to-do lists, and controlling the lights and multiple monitors. I found
                   (with the help of a friend) a fully functional PC that MIT was about to throw out and turned it into a
-                  media server that constantly listens for voice commands. I wanted to make everything from scratch for the
+                  media server that constantly listens for voice commands. I wanted to make everything from scratch for
+                  the
                   sake of learning. However, this would slightly
                   <a href="https://xkcd.com/1205/" target="_blank">
                     defeat the purpose of the automation </a>, so I ended up using the
                   <a href="https://github.com/cmusphinx/pocketsphinx" target="_blank">pocketsphinx</a>
                   library for voice recognition.
-                  <em>Note: As of now, the setup is extremely ad-hoc, with numerous custom very limited dictionaries, because
-                    of the low accuracy and precision of the voice recognition engine, as well as ridiculously hard-coded behaviour.
+                  <em>Note: As of now, the setup is extremely ad-hoc, with numerous custom very limited dictionaries,
+                    because
+                    of the low accuracy and precision of the voice recognition engine, as well as ridiculously
+                    hard-coded behaviour.
                   </em>
                 </p>
                 <p>
@@ -307,81 +384,224 @@
                 <div class="card-title" style="height:30%"></div>
               </div>
             </div>
-          </div>
-          <div class="col 6 s12 m6">
-
-            <div class="card ">
+            <div class="card">
+              <!-- tilings -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
+                    abstract</p>
+                </div>
+                <img class="activator" src="footage/tile_1.png" alt="wolff-construction" style="max-height:100%">
+              </div>
               <div class="card-content">
-                <span class="card-title grey-text text-darken-4">Anything not listed above can be found on my Github page.</span>
+                <span class="card-title activator grey-text text-darken-4">Results on Tilings with Walkup Structure and
+                  Their Properties
+                </span>
+
+                <p>
+                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
+                    target="_blank">View conference abstract</a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
+                </p>
               </div>
-
-              <div class="card-content ">
-                <div class="github-widget center" data-username="kristian-georgiev" style="display: inline-block;"></div>
-                <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
-
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">My involvement
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important">Although the project is mathematical
+                  in nature, my contribution consisted solely of developing dynamic geometric
+                  tool in C# to make the process of visualizing the tilings of polyiamonds less tedious.
+                </p>
+                <p>
+                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
+                    target="_blank">View conference abstract</a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
+                </p>
+                <div class="card-title" style="height:30%"></div>
               </div>
-
             </div>
+            <div class="card">
+              <!-- FoosRank -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="card-title blue-grey activator abstract waves-light"
+                  style="opacity:0.87;position:absolute;width:100%;top:0;">
+                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read more</p>
+                </div>
+                <img class="activator" src="footage/foosrank.png" alt="foosrank logo" style="max-height:100%">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">FoosRank</span>
 
+                <p>
+                  <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank"> <strong> Go to web app </strong>
+                  </a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/FoosRank" target="_blank">Visit repository</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Description
+                  <i class="material-icons right">close</i>
+                </span>
+                <p class="card-title" align=left style="font-size:1rem !important">
+                  I play an unhealthy amount of foosball. And so do a lot of my friends. Soon the inevitable question
+                  arises - <strong>Who is the best?</strong>
+                  To answer that, <a href="https://github.com/madelinez820" target="_blank">Maddy</a> and I created
+                  FoosRank - a ranking system for foosball games. The algorithm is a slight modification of the ELO
+                  system, used in chess among
+                  others. FoosRank also keeps the score during the game and shows each user their game history and
+                  ranking over time.
+                </p>
+                <p>I'm very happy that the app caught on and 20+ people have recorded 500+ games on the platform since
+                  we made it!</p>
+                <p>
+                  <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank"> <strong> Go to web app </strong>
+                  </a>
+                </p>
+                <p>
+                  <a href="https://github.com/kristian-georgiev/FoosRank" target="_blank">Visit repository</a>
+                </p>
+                <div class="card-title" style="height:30%"></div>
+              </div>
+            </div>
           </div>
 
-
-
+          <!-- end of section -->
         </div>
-        <!-- end of third row -->
-
-
-
       </div>
-      <!-- end of section -->
     </div>
+
     <!-- end of container -->
 
-    <!-- About section -->
+    <!-- Classes section -->
 
-    <div id="about" style="height:50px"></div>
+    <div id="classes" style="height:1px"></div>
 
-    <div class="parallax-container valign-wrapper blue" style="min-height:60vh;">
+    <div class="parallax-container valign-wrapper blue snap-scrolled" style="min-height:100vh;">
 
-      <div class="section no-pad-bot" style="position:relative">
+      <div class="section">
         <div class="container" id="about" style="min-height:60vh;position:relative;top:0%">
-          <div class="section" style="position:relative">
+          <div class="section no-pad-bot" style="position:relative">
             <div class="row">
               <blockquote class="title" style="font-size:2rem;font-weight:bold">
-                About me
+                Classes
               </blockquote>
 
+              <div class="padded-less-less">
+                <div class="section scrollspy" id="classes">
+                  <!-- <div class="section"> -->
 
-              <!-- end of col -->
-              <div class="col 6 s12">
-                <div class="card horizontal text-dark">
+                  <!--   Icon Section   -->
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <div class="icon-block">
+                        <h2 class="center"><i class="material-icons">school</i></h2>
+                        <h5 class="center">Coursework</h5>
 
-                  <div class="card-stacked text-dark">
-                    <div class="card-content grey-text text-darken-4">
-                      <p class="card-title">My name is Kristian Georgiev. I am an undergraduate student at MIT, pursuing a degree in Mathematics with Computer Science. My academic
-                        interests are in the fields of abstract algebra, discrete mathematics, theoretical computer science,
-                        artificial intelligence and deep learning.
-                      </p>
-                      <p class="card-title">
-                        I am originally from Bulgaria. Apart from academics, I spend lots of time exploring music and food.
-                      </p>
+
+                        <div class="card">
+                          <div class="card-content">
+
+                            <p class="light center">(<span class="red-text"> G = graduate,</span>, <span
+                                class="blue-text">H = header/ advanced,</span>, <span class="green-text">U =
+                                undergraduate</span>)</p>
+                            <p class="grey-text">During my undergraduate studies at MIT, I've taken a number of classes.
+                              Below
+                              are some of my favorite.</p>
+                          </div>
+
+                          <ul class="collection light">
+                            <li class="collection-item avatar">
+                              <img src="img/g.jpg" class="circle">
+                              <span class="title black-text">Fundamentals of Probability (6.436)</span>
+                              <p class="grey-text">Fall 2018
+                              </p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="img/g.jpg" class="circle">
+                              <span class="title black-text">Mathematical Statistics (18.655)</span>
+                              <p class="grey-text">Spring 2019
+                              </p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="img/u.jpg" class="circle">
+                              <span class="title black-text"> Introduction to Inference (6.008)</span>
+                              <p class="grey-text">Fall 2018
+                              </p>
+                            </li>
+                            <!-- <li class="collection-item avatar">
+                              <img src="img/g.jpg" class="circle">
+                              <span class="title">Machine Learning (6.867)</span>
+                              <p>Fall 2019
+                              </p>
+                            </li> -->
+                            <!-- <li class="collection-item avatar">
+                              <img src="img/h.jpg" class="circle">
+                              <span class="title black-text">Design and Analysis of Algorithms (6.046)</span>
+                              <p class="grey-text">Fall 2019
+                              </p>
+                            </li> -->
+                            <li class="collection-item avatar">
+                              <img src="img/h.jpg" class="circle">
+                              <span class="title black-text">(Abstract) Algebra I (18.701)</span>
+                              <p class="grey-text">Fall 2017
+                              </p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="img/u.jpg" class="circle">
+                              <span class="title black-text">Linear PDEs: Analysis and Numerics (18.303)</span>
+                              <p class="grey-text">Spring 2019
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-action">
-                      <div class="card-content">
 
-                        <span class="card-title grey-text text-darken-4">
-                          <a href="resume_kristian_georgiev.pdf" target="_blank">
-                            A link to my resume.</a>
-                        </span>
+                    <div class="col s12 m6">
+                      <div class="icon-block">
+                        <h2 class="center"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Teaching</h5>
+
+                        <div class="card">
+                          <div class="card-content">
+                            <p class="light center">(
+                              <span class="blue-text text-darken-4">LA = lab assistant,</span>, <span
+                                class="black-text">O =
+                                other</span>)</p>
+                            <p class="grey-text">Since my sophomore year, I have started to serve as a course assistant
+                              for
+                              some
+                              classes.</p>
+                          </div>
+                          <ul class="collection light">
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="img/la.jpg" class="circle">
+                              <span class="title black-text">Introduction to Machine Learning (6.036) LA</span>
+                              <p class="grey-text">Spring 2019
+                              </p>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="img/o.jpg" class="circle">
+                              <span class="title black-text">(Abstract) Algebra I (18.701) Grader</span>
+                              <p class="grey-text">Fall 2018
+                              </p>
+                          </ul>
+                        </div>
                       </div>
                     </div>
 
                   </div>
+
                 </div>
-
               </div>
-              <!-- end of col -->
-
             </div>
 
           </div>
@@ -392,7 +612,8 @@
     <!-- Contacts section -->
 
     <div id="contacts" style="height:50px"></div>
-    <div class="container" style="min-height:40vh;">
+
+    <div class="container snap-scrolled" style="min-height:40vh;">
       <div class="section">
         <div class="row">
           <blockquote class="title" style="font-size:40px;font-weight:bold">
@@ -406,7 +627,8 @@
 
               <div class="card-stacked">
                 <div class="card-content">
-                  <p class="card-title">Want to work together? Interested in what I do? Want to share your awesome idea? Don't hesitate to write
+                  <p class="card-title">Want to work together? Interested in what I do? Want to share your awesome idea?
+                    Don't hesitate to write
                     to me at
                     <a href="mailto:krisgrg@mit.edu">krisgrg
                       <span style="color:teal;font-size:.75em"> at </span>mit.edu</a>.
@@ -425,8 +647,9 @@
       </div>
     </div>
 
-
   </div>
+  <!-- end of overall wrapper -->
+
 
   <!-- Footer -->
 
@@ -462,29 +685,17 @@
       </div>
 
     </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <p style="text-align:left;">
-          Made with &hearts;. Many thanks to
-          <a class="brown-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a>!
-          <span style="float:right;">Last modified
-            <script>document.write(document.lastModified);</script> </span>
-        </p>
-      </div>
-    </div>
-  </footer>
 
-  </div>
-  <!--  Scripts-->
-  <script src="particles.js"></script>
-  <script src="js/app.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/x-mathjax-config">
+
+    <!--  Scripts-->
+    <script src="particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
 </body>
