@@ -1,154 +1,45 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
- .overall-wrapper {
-  scroll-snap-type: y mandatory;
-}
-
-.snap-scrolled {
-  scroll-snap-align: start;
-}
-
-
-.text-overlay
-{
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text-overlay-text
-{
-  position: absolute;
-  font-size: 4.3rem;
-  white-space: nowrap;
-  color: #2196F2;
-}
-.text-overlay-text-small
-{
-  position: absolute;
-  font-size: 1.3rem;
-  white-space: nowrap;
-  color: #2196F2;
-}
-
-
- #particles-js
- {
-   max-height: 70%;
- }
-
- .github a {
-  background-image:url("github.png") !important;
-  background-repeat: no-repeat;
-  min-height: 100%;
-  min-width: 100%;
-  display:block;
-  padding-left: 30px;
-}
-
-
- nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
-p {
-  line-height: 2rem;
-}
-
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
+body {
+    max-width: 800px;
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    font-family: 'Roboto', 'Lato', sans-serif;
+    background-color: #fffff8;
+    line-height: 1.35;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    /* position: absolute; */
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+a:link {
+  color: #a00000;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+a:visited {
+  color: #aa0000;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+.accordion-button:not(.collapsed) {
+  color: #a00000;
+  background-color: #b4181818;
 }
 
-footer.page-footer {
-  margin: 0;
+.accordion-button:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 0.25rem rgba(53,11,13,.25);
 }
 
-.arrow-wrap {
-  position:absolute;
-  z-index:1;
-  left:50%;
-  top:-5em;
-  margin-left:-5em;
-  background: #2196F3;
-  width:10em;
-  height:10em;
-  padding:3.7em 1.6em;
-  border-radius:50%;
-  border-style: solid;
-  border-color: #ffffff;
-  font-size:0.5em;
-  display:block;
+.list-group-item {
+  background-color: #fffff8;
 }
 
-.arrow {
-  float:left;
-  position:relative;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #ffffff transparent transparent transparent;
-  -webkit-transform:rotate(360deg)
+.btn-danger {
+  color: #a00000;
 }
 
-.arrow:after {
-  content:'';
-  position:absolute;
-  top:-3.2em;
-  left:-3em;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #2196F2 transparent transparent transparent !important;
-  -webkit-transform:rotate(360deg)
+.btn-outline-danger {
+  color: #a00000;
+  border-color: #a00000;
 }
-
-.abstract {
-  display: none;
-}
-
-.card:hover .abstract {
-  display: block;
-}
-

@@ -1,714 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-113380303-1"
+    ></script>
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113380303-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-113380303-1');
-  </script>
-  <!-- Meta Tags -->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kristian Georgiev's Webpage</title>
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CSS  -->
-  <link rel="shortcut icon" href="logos/logo.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/cards.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
+    <title>Kristian Georgiev</title>
 
-<!-- Home Section -->
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="logos/logo.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
 
-
-<body style="width:100%">
-  <div id="home">
-  </div>
-  <div class="navbar-fixed">
-    <nav class="blue" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"></a>
-        <ul class="right hide-on-med-and-down" style="color:white">
-          <li>
-            <a href="#projects" style="color:white">Projects</a>
-          </li>
-          <li>
-            <a href="#classes" style="color:white">Classes</a>
-          </li>
-          <li>
-            <a href="#contacts" style="color:white">Contact me</a>
-          </li>
-          <!-- <li>
-            <a href="https://github.com/kristian-georgiev" target="_blank" class="github right-align" style="color:white">
-              <img type="image" align="middle" src="logos/github-logo.png" style="margin-top:-10%;color:white"> Github </a>
-            </li> -->
-        </ul>
-
-
-        <ul id="nav-mobile" class="side-nav">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#classes">Classes</a>
-          </li>
-          <li>
-            <a href="#contacts">Contact me</a>
-          </li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse">
-          <i class="material-icons white-text">menu</i>
-        </a>
-      </div>
-
-    </nav>
-  </div>
-
-  <!-- for scroll snapping purposes -->
-  <div class="overall-wrapper">
-
-    <!-- home (about me) section -->
-    <div id="home" style="height:50px"></div>
-
-    <div class="container snap-scrolled" style="min-height:40vh;">
-      <div class="section">
-        <!-- <div class="row"> -->
-          <blockquote class="title" style="font-size:40px;font-weight:bold">
-            Kristian Georgiev
-          </blockquote>
-          <!-- <blockquote style="font-size:20px">
-            MIT Class of 2021, Mathematics & Computer Science
-          </blockquote> -->
-
-
-          <!-- end of col -->
-          <!-- <div class="col 6 s12"> -->
-            <div class="card horizontal">
-
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p>I am pursuing a joint degree in Mathematics and Computer Science at MIT.                     
-                    My academic interests are in the fields of probability, discrete mathematics, and machine learning.
-                  </p>
-                  <p>
-                    I am originally from Bulgaria. Apart from academics, I spend lots of time exploring music and food.
-                  </p>
-                  <span class="grey-text text-darken-4">
-                    <a href="https://drive.google.com/file/d/1pV12sCjQxA9kOU_u7X2WLAlUbCVH9D3L/view?usp=sharing"
-                      target="_blank">
-                      A link to my resume.</a>
-                  </span>
-                </div>
-
-              </div>
-            <!-- </div> -->
-
-          <!-- </div> -->
-          <!-- end of col -->
-
+  <!-- Home Section -->
+  <body>
+    <div class="container">
+      <!-- about me section -->
+      <div class="row">
+        <div class="col-sm">
+          <h1>Kristian Georgiev</h1>
+          <h6>S.B. MIT '21</h6>
+          <p>
+            I am pursuing a joint degree in Mathematics and Computer Science at
+            MIT, supported in part by the
+            <a
+              href="https://rd-stewardship.mit.edu/donor-info/DENTC/"
+              target="_blank"
+              >Marie G Dennett Foundation</a
+            >. My academic interests are at the intersection of machine learning
+            and optimization. In particular, I am interested in building deep
+            learning models robust to natural and adversarial domain shifts. I
+            am currently a
+            <a
+              href="https://superurop.mit.edu/scholars/kristian-georgiev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SuperUROP scholar</a
+            >
+            advised by
+            <a
+              href="http://asu.mit.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Prof. Ozdaglar</a
+            >. In my junior year, I was an undergraduate researcher at
+            <a href="" target="_blank" rel="noopener noreferrer">Prof. Mądry</a
+            >'s lab, working on adversarial robustness. I have interned in
+            <a href="https://quantco.com/" target="_blank">QuantCo</a> and
+            <a href="https://www.apple.com/siri/" target="_blank">Apple Siri</a
+            >.
+          </p>
+          <p>
+            I grew up in Bulgaria. In my free time, I enjoy playing soccer,
+            volleyball, and chess. At MIT, I have led the
+            <a href="http://aiclub.mit.edu/" target="_blank">AI@MIT</a> club.
+          </p>
         </div>
-
-      </div>
-    </div>
-
-
-    <!-- Projects section -->
-
-    <div id="projects" style="height:50px"></div>
-    <div class="container snap-scrolled">
-
-      <div class="section">
-        <blockquote class="title" style="font-size:3rem;font-weight:bold">
-          Projects
-        </blockquote>
-        <div class="row">
-          <div class="col s12 cards-container">
-            <div class="card">
-              <!-- Wolff -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
-                    abstract</p>
-                </div>
-                <img class="activator" src="footage/wolff.jpg" alt="wolff-construction" style="vertical-align:center">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">On the size of unions of lines in
-                  $\mathbb{F}^n$ satisfying the Wolff axiom</span>
-                <p>
-                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full
-                    paper</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Abstract
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important"> The paper deals with finding unions
-                  of lines in $\mathbb{F}_{p^{2k}}^{n}$ which obey the Wolff axiom and
-                  have minimal size. We provide an extension of the constructions for $\mathbb{F}_{p^{2k}}^3$, obtained
-                  by
-                  Tao in 2002, to a construction for $\mathbb{F}_{p^{2k}}^n$. We determine the size of the union of
-                  lines
-                  in our construction in $\mathbb{F}_{p^{2k}}^n$ to be $O\left(p^{1.6kn}\right)$. We prove that our
-                  construction
-                  obeys the Wolff axiom up to a heuristically negligible number of lines.
-                </p>
-                <span class="card-title grey-text text-darken-4">Summary</span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  In our project, we examine sets of lines in certain classical objects in abstract algebra. The goal is
-                  to evaluate the minimal
-                  size of sets of lines which satisfy certain conditions formulated by Thomas Wolff in 1995. We do that
-                  by
-                  determining the smallest possible surface that contains the whole set of lines. We find a general form
-                  of that surface in $n$ dimensions, which has applications in physics. It turns out that the size of
-                  our
-                  set is significantly smaller than expected. This result may give helpful insight on how to approach
-                  problems
-                  with similar formulation.
-                </p>
-                <span class="card-title grey-text text-darken-4">My involvement</span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I developed the project in the summer of 2015 during
-                  <a href="https://www.cee.org/research-science-institute">RSI</a>, an intensive and rigorous summer
-                  research school organized by
-                  <a href="https://www.cee.org/">CEE</a>. I later took part in the final round of
-                  <a href="https://student.societyforscience.org/intel-isef">Intel ISEF</a>, the world’s largest
-                  international pre-college science competition.
-                </p>
-                <p>
-                  <a href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf" target="_blank">Read full
-                    paper</a>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <!-- topology -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:30%;text-align:center">Click to read the
-                    abstract</p>
-                </div>
-                <img class="activator" src="footage/add-sphere.png" alt="glue-a-sphere-to-a-torus"
-                  style="vertical-align:center">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">On the number of two-dimensional manifolds
-                  obtained by the identification of the edges of $2n$-gons</span>
-                <p>
-                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing"
-                    target="_blank">Read full paper (not published)</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Abstract
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important">The project belongs to the field of
-                  topology. More specifically, the identification (gluing) of the edges
-                  of $2n$-gons is analyzed. We prove that the resulting manifold is a topological surface. A
-                  classification
-                  of compact surfaces is presented. A conjecture regarding the number of ways to obtain an arbitrary
-                  manifold
-                  from $2n$-gon is constructed. The author’s contributions consist of constructing a conjecture
-                  regarding
-                  the number of ways to obtain an arbitrary manifold from $2n$-gon, as well as computing the number of
-                  configurations
-                  of the edges of a $2n$-gon forming a sphere, a torus, a $\mathbb{R}P^2$ and a Klein bottle, thus
-                  proving
-                  the author’s conjecture true for the mentioned manifolds.
-                </p>
-                <span class="card-title grey-text text-darken-4">My involvement</span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I started developing this project in the summer of 2014 at
-                  <a href="http://www.math.bas.bg/omi/hssimi/?lang=en">HSSIMI</a> - a summer research school held at
-                  Blagoevgrad, Bulgaria under the guidance of Katerina Velcheva,
-                  Stanford. Afterwards, I continued working on the topic under the guidance of Peter Kopanov, Plovdiv
-                  University.
-                  The culmination of the project was having the honor to present it at the 27th edition of
-                  <a href="http://www.eucys2015.eu/">EUCYS</a>, the largest science fair for high school students in
-                  Europe.
-                </p>
-
-                <p>
-                  <a href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing"
-                    target="_blank">Read full paper (not published)</a>
-                </p>
-
-              </div>
-            </div>
-            <div class="card">
-              <!-- 18.200 -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
-                    abstract</p>
-                </div>
-                <img class="activator" src="footage/18.200-paper.png" alt="dyck-path" style="vertical-align:center">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">On Sequences of Coin Tosses with Different
-                  Stopping Conditions</span>
-                <p>
-                  <a href="https://drive.google.com/file/d/17KhbIpHssDi9tfWt5KyLQRI9Zzj0Jz_g/view?usp=sharing"
-                    target="_blank">Read full class paper</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Abstract
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  We examine the random process of tossing a coin an arbitrary number of times, stopping as soon as the
-                  number of tails is greater than the number of heads.
-                  We find a generating function, closed-form formula for the probability and expectation of the number
-                  of performed tosses. We then explore a number of generalizations.
-                  First, we examine how the bias of the coin affects the expected number of tosses. Then we consider
-                  stopping conditions of the form "stop as soon as there are $k$ more
-                  tails than heads" for all non-negative $k$. Finally, we present computer simulations to illustrate the
-                  results.
-                </p>
-                <span class="card-title grey-text text-darken-4">My involvement</span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I developed this expository paper in the spring of 2018 for the undergraduate MIT course 18.200 -
-                  Principles of Discrete Applied Mathematics.
-                </p>
-                <p>
-                  <a href="https://drive.google.com/file/d/17KhbIpHssDi9tfWt5KyLQRI9Zzj0Jz_g/view?usp=sharing"
-                    target="_blank">Read full class paper</a>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <!-- 18.303 -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
-                    abstract</p>
-                </div>
-                <img class="activator" src="footage/kde.png" alt="kde-smoothing-of-MC-approximation"
-                  style="vertical-align:center">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Monte Carlo Methods for P(I)DEs: Feynman-Kac
-                  for Jump-Diffusions</span>
-                <p>
-                  <a href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
-                    target="_blank">Read full class paper</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Abstract
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important"> Continuous time Markov processes are
-                  heavily used to approximate solutions to parabolic
-                  and elliptic partial differential equations. In this paper, we examine the role of the Feynman-Kac
-                  formula in the aforementioned approximation.
-                  We present the classical results for linear parabolic equations. Then we generalize the method for
-                  stochastic processes with discrete jump discontinuities.
-                  Via Fokker-Planck's equation we show that this class of SDEs is the codomain of a more general class
-                  of partial integro-differential equations under
-                  Feynman-Kac's transformation. We utilize a jump-adapted Euler-Maruyama scheme to approximate the
-                  evolution of jump-diffusions. Finally, we analyze
-                  the weak and strong convergence properties of the implemented methods.
-
-                </p>
-                <span class="card-title grey-text text-darken-4">My involvement</span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I developed this expository paper in the spring of 2019 for the MIT undergraduate class 18.303: Linear
-                  Partial Differential Equations: Analysis and Numerics.
-                </p>
-                <p>
-                  <a href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
-                    target="_blank">Read full class paper</a>
-                </p>
-              </div>
-            </div>
-            <div class="card small">
-              <!-- dorm room -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read more</p>
-                </div>
-                <img class="activator" src="footage/workspace.jpg" alt="photo of the workspace setup"
-                  style="max-height:100%">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Dorm Room Automation System </span>
-
-                <p>
-                  <a href="https://github.com/kristian-georgiev/media-server" target="_blank">Visit repository</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Description
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I noticed that my routine is quite repetitive and I can automate some mundane tasks like playing music
-                  on different platforms,
-                  maintaing alarms, calendars and to-do lists, and controlling the lights and multiple monitors. I found
-                  (with the help of a friend) a fully functional PC that MIT was about to throw out and turned it into a
-                  media server that constantly listens for voice commands. I wanted to make everything from scratch for
-                  the
-                  sake of learning. However, this would slightly
-                  <a href="https://xkcd.com/1205/" target="_blank">
-                    defeat the purpose of the automation </a>, so I ended up using the
-                  <a href="https://github.com/cmusphinx/pocketsphinx" target="_blank">pocketsphinx</a>
-                  library for voice recognition.
-                  <em>Note: As of now, the setup is extremely ad-hoc, with numerous custom very limited dictionaries,
-                    because
-                    of the low accuracy and precision of the voice recognition engine, as well as ridiculously
-                    hard-coded behaviour.
-                  </em>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/media-server" target="_blank">Visit repository</a>
-                </p>
-                <div class="card-title" style="height:30%"></div>
-              </div>
-            </div>
-            <div class="card">
-              <!-- tilings -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read the
-                    abstract</p>
-                </div>
-                <img class="activator" src="footage/tile_1.png" alt="wolff-construction" style="max-height:100%">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Results on Tilings with Walkup Structure and
-                  Their Properties
-                </span>
-
-                <p>
-                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
-                    target="_blank">View conference abstract</a>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">My involvement
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important">Although the project is mathematical
-                  in nature, my contribution consisted solely of developing dynamic geometric
-                  tool in C# to make the process of visualizing the tilings of polyiamonds less tedious.
-                </p>
-                <p>
-                  <a href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
-                    target="_blank">View conference abstract</a>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/polyiamonds-applet" target="_blank">Visit repository</a>
-                </p>
-                <div class="card-title" style="height:30%"></div>
-              </div>
-            </div>
-            <div class="card">
-              <!-- FoosRank -->
-              <div class="card-image waves-effect waves-block waves-light">
-                <div class="card-title blue-grey activator abstract waves-light"
-                  style="opacity:0.87;position:absolute;width:100%;top:0;">
-                  <p class="activator center" style="position:relative;top:40%;text-align:center">Click to read more</p>
-                </div>
-                <img class="activator" src="footage/foosrank.png" alt="foosrank logo" style="max-height:100%">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">FoosRank</span>
-
-                <p>
-                  <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank"> <strong> Go to web app </strong>
-                  </a>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/FoosRank" target="_blank">Visit repository</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Description
-                  <i class="material-icons right">close</i>
-                </span>
-                <p class="card-title" align=left style="font-size:1rem !important">
-                  I play an unhealthy amount of foosball. And so do a lot of my friends. Soon the inevitable question
-                  arises - <strong>Who is the best?</strong>
-                  To answer that, <a href="https://github.com/madelinez820" target="_blank">Maddy</a> and I created
-                  FoosRank - a ranking system for foosball games. The algorithm is a slight modification of the ELO
-                  system, used in chess among
-                  others. FoosRank also keeps the score during the game and shows each user their game history and
-                  ranking over time.
-                </p>
-                <p>I'm very happy that the app caught on and 20+ people have recorded 500+ games on the platform since
-                  we made it!</p>
-                <p>
-                  <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank"> <strong> Go to web app </strong>
-                  </a>
-                </p>
-                <p>
-                  <a href="https://github.com/kristian-georgiev/FoosRank" target="_blank">Visit repository</a>
-                </p>
-                <div class="card-title" style="height:30%"></div>
-              </div>
+        <div class="col-sm">
+          <div class="card align-items-center" style="max-width: 98%">
+            <img
+              alt="Profile Photo Kristian Georgiev"
+              src="img/profile_photo.jpg"
+              class="rounded mx-auto d-block"
+              style="max-width: 100%"
+            />
+            <div class="card-body align-items-center">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  krisgrg@mit.edu |
+                  <a
+                    href="https://drive.google.com/file/d/1hj8NHscaUAOl-byqZKBXfY43xn1bxAv2/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Résumé</a
+                  >
+                  |
+                  <a
+                    href="https://twitter.com/kris_georgiev97"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Twitter</a
+                  >
+                  |
+                  <a
+                    href="https://www.linkedin.com/in/kristiangeorgiev97/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                  |
+                  <a
+                    href="https://github.com/kristian-georgiev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  Website last updated on
+                  <script>
+                    var date = new Date(document.lastModified);
+                    document.write(
+                      date.toDateString().split(" ").slice(1).join(" ")
+                    );
+                  </script>
+                  .
+                </li>
+              </ul>
             </div>
           </div>
-
-          <!-- end of section -->
         </div>
       </div>
-    </div>
 
+      <!-- Publications section -->
+      <h2 style="margin-top: 40px">Publications</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a
+            href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Results on Tilings with Walkup Structure and Their Properties </a
+          >, Tania Otsetarova, Kristian Georgiev, Konstantin Delchev. Second
+          International Conference “Mathematics Days in Sofia” 2017.
+        </li>
+        <li class="list-group-item">
+          <a
+            href="http://www.math.bas.bg/smb/2017_PK/tom_2017/pdf/162-168.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            On the size of unions of lines in \(\mathbb{F}^n\) satisfying the
+            Wolff axiom
+          </a>
+          Hong Wang, Kristian Georgiev. Proceedings of the Forty-sixth Spring
+          Conference of the Union of Bulgarian Mathematicians 2017. (developed
+          during
+          <a
+            href="https://www.cee.org/news/eighty-four-high-school-students-selected-and-participating-32nd-research-science-institute-mit"
+            target="_blank"
+            rel="noopener noreferrer"
+            >RSI 2015</a
+          >)
+        </li>
+      </ul>
+
+      <!-- Projects section -->
+      <h2 style="margin-top: 40px">
+        Projects
+        <!-- <button type="button" class="btn btn-outline-danger toggle-all"> Expand all </button> -->
+      </h2>
+      Below is a mix of class projects and stuff just for fun.
+
+      <div class="accordion accordion-flush" id="accordionFlushProjects">
+        <!-- var coherent min max -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingVarCoh">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseVarCoh"
+              aria-expanded="false"
+              aria-controls="flush-collapseVarCoh"
+              style="text-align: left"
+            >
+              Last Iterate Convergence of the Extragradient Method for
+              Variationally Coherent Min-Max Problems (2020)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseVarCoh"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingVarCoh"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/1ZjVN4ljYuwom5x5FlNItjTcx7uikZIdv/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read full paper</a
+              >
+              |
+              <a
+                href="https://drive.google.com/file/d/1dT_No7xE9xR2JNjKDFaKtkDrP0HexeC-/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View slides</a
+              >
+              <figure class="figure">
+                <img
+                  src="img/var_coh.png"
+                  class="figure-img img-fluid rounded"
+                  alt="Variationally coherent paper figure"
+                  style="max-width: 60%"
+                />
+                <figcaption class="figure-caption">
+                  An example of a variationally coherent function [Zhou et al.,
+                  2017]
+                </figcaption>
+              </figure>
+
+              <p>
+                In this work we analyze the behaviour of the last iterate of the
+                Extragradient (EG) and Proximal Point (PP) algorithms on smooth
+                variationally coherent problems1 . In particular, we examine a
+                relaxation of the conditions in Golowich et al. (2020), who show
+                a rate of \(\mathcal{O}\left( 1 / \sqrt{T} \right)\) for both
+                algorithms when the problem is convex- concave. We show that
+                best iterate convergence at a rate of \(\mathcal{O}\left( 1 /
+                \sqrt{T} \right)\) naturally carries over to to variationally
+                coherent problems but key monotonicity properties are lost.
+              </p>
+              <p class="text-muted">
+                Golowich, N., Pattathil, S., Daskalakis, C., and Ozdaglar, A.
+                Last iterate is slower than averaged iterate in smooth
+                convex-concave saddle point problems, 2020.
+              </p>
+              <p class="text-muted">
+                Zhou, Z., Mertikopoulos, P., Bambos, N., Boyd, S., and Glynn, P.
+                W. Stochastic mirror descent in variationally coherent
+                optimization problems, NeurIPS 2017.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- maml landscape -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingMeta">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseMeta"
+              aria-expanded="false"
+              aria-controls="flush-collapseMeta"
+              style="text-align: left"
+            >
+              Meta-Visualization: Investigating Rapid Learning and Feature Reuse
+              (2019)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseMeta"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingMeta"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/1gPAy1tuJ8uzb0Io1iFqrNalFb8Opkbpz/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read full paper</a
+              >
+              |
+              <a
+                href="https://github.com/kristian-georgiev/867-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Visit repository</a
+              >
+              <img
+                src="img/meta_viz_fig.png"
+                alt="meta visualization figure"
+                style="max-width: 60%"
+              />
+              <p>
+                Gradient based meta-learning has established itself as a
+                promising research direction for prob- lems in few-shot
+                learning: data-constrained training on an ensemble of tasks with
+                quick adapta- tion on a task, unseen during training. Until
+                recently, little has been known about the success of
+                model-agnostic meta-learners (MAMLs), which are particularly
+                useful to few shot learning. We shed light on the phenomenon of
+                feature reuse in MAMLs through empirical visualizations of the
+                loss landscapes of a variety of tasks. We develop
+                meta-visualization: an efficient framework for visualization of
+                any gradient based meta learning algorithm that can be used to
+                generate hypotheses and guide model designs. The contributions
+                of our work vary from augmenting research in the field of meta
+                learning to explaining the success of the method through
+                geometrical lens.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- dissecting adv -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingRobDissect">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseRobDissect"
+              aria-expanded="false"
+              aria-controls="flush-collapseRobDissect"
+            >
+              Dissecting Robust Neural Networks (2019)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseRobDissect"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingRobDissect"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/1APiihQP8XTeIGF8ZP86vd6Q_vBNShy-b/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read full paper</a
+              >
+              |
+              <a
+                href="https://docs.google.com/presentation/d/e/2PACX-1vSqaVm_AEvDVfqOrQzLullmEpe8HRYDO1N02qTm2B_XKIIAdE0IPEykJHUClIBOVrYG-xUJle586L-_/pub?start=false&loop=false&delayms=3000"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View slides</a
+              >
+              <img
+                src="img/rob_dissect.png"
+                alt="robust dissection figure"
+                style="max-width: 60%"
+              />
+              <p>
+                We explore the hypothesis that robust training helps to
+                disentangle representations by looking at the behavior of
+                individual units of a robustly trained neural network through
+                network dissection. We observe that to a large extent, robust
+                models explain each high-level concept with fewer units than the
+                equivalent non-robust models.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- karger stein -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+              style="text-align: left"
+            >
+              Survey of the Recent Progress on the Runtime of the Karger-Stein
+              Algorithm (2020)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/1leRazdwKrOKU9iWuOcEubFKO0JbHqvGB/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read full paper</a
+              >
+
+              <figure class="figure">
+                <img
+                  src="img/karger_stein.png"
+                  class="figure-img img-fluid rounded"
+                  alt="Variationally coherent paper figure"
+                  style="max-width: 98%"
+                />
+                <figcaption class="figure-caption">
+                  A successfull run of the Karger-Stein contraction algorithm
+                  [Karger's Algorithm Wikipedia Entry]
+                </figcaption>
+              </figure>
+
+              <p>
+                The minimum \(k\)-cut problem is a natural generalization of the
+                famous minimum cut problem, where we seek a cut that partitions
+                a graph \(G(V,E)\) into \(k\) components. Karger et al. (1996)
+                develop a randomized algorithm and provide an analysis which
+                shows their algorithm provides a solution with high probability
+                in \(\tilde{\mathcal{O}}\left( |V|^{2(k-1)} \right)\) time. A
+                reduction to the maximum-weight clique problem gives a lower
+                bound of \(\mathcal{\Omega}\left( |V|^{(1-o(1))k} \right)\).
+                Until recently, the gap in the exponent was not explained.
+                Confirming previous experimental results, Anuram Gupta et al.
+                (2020) provide a refined analysis of the Karger-Stein algorithm
+                that shows it is tight up to lower order terms. We survey the
+                techniques employed in their analysis, together with other
+                recent analyses of algorithms of similar flavour; this includes
+                ideas from extremal set theory and stochastic processes.
+              </p>
+              <p class="text-muted">
+                Anupam Gupta et al. “Optimal Bounds for the k-cut Problem”. In:
+                arXiv preprint arXiv:2005.08301 (2020).
+              </p>
+              <p class="text-muted">
+                David R. Karger and Clifford Stein. “A New Approach to the
+                Minimum Cut Problem”. In: J. ACM 43.4 (July 1996), pp. 601–640.
+              </p>
+              <p class="text-muted">
+                Wikipedia, Karger's Algorithm
+                https://en.wikipedia.org/wiki/Karger%27s_algorithm
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- feynman-kac -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFeynmanKac">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFeynmanKac"
+              aria-expanded="false"
+              aria-controls="flush-collapseFeynmanKac"
+              style="text-align: left"
+            >
+              Monte Carlo Methods for P(I)DEs: Feynman-Kac for Jump-Diffusions
+              (2019)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFeynmanKac"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFeynmanKac"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
+                target="_blank"
+                >Read full paper
+              </a>
+              <img
+                src="img/kde.png"
+                alt="Feynman-Kac project"
+                style="max-width: 60%"
+              />
+              <p>
+                Continuous time Markov processes are heavily used to approximate
+                solutions to parabolic and elliptic partial differential
+                equations. In this paper, we examine the role of the Feynman-Kac
+                formula in the aforementioned approximation. We present the
+                classical results for linear parabolic equations. Then we
+                generalize the method for stochastic processes with discrete
+                jump discontinuities. Via Fokker-Planck's equation we show that
+                this class of SDEs is the codomain of a more general class of
+                partial integro-differential equations under Feynman-Kac's
+                transformation. We utilize a jump-adapted Euler-Maruyama scheme
+                to approximate the evolution of jump-diffusions. Finally, we
+                analyze the weak and strong convergence properties of the
+                implemented methods.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2n-gons -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+              style="text-align: left"
+            >
+              On the Number of Two-Dimensional Manifolds Obtained by Gluing the
+              Edges of Polygons (2014)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a
+                href="https://drive.google.com/file/d/0B4rcTgbHKq3NNnpOeEJxREltX3c/view?usp=sharing"
+                target="_blank"
+                >Read full paper</a
+              >
+              <img
+                class="activator"
+                src="img/add-sphere.png"
+                style="max-width: 60%"
+                alt="glue-a-sphere-to-a-torus"
+              />
+              <p>
+                The project belongs to the field of topology. More specifically,
+                the identification (gluing) of the edges of \(2n\)-gons is
+                analyzed. We prove that the resulting manifold is a topological
+                surface. A classification of compact surfaces is presented. A
+                conjecture regarding the number of ways to obtain an arbitrary
+                manifold from \(2n\)-gon is constructed. The author’s
+                contributions consist of constructing a conjecture regarding the
+                number of ways to obtain an arbitrary manifold from \(2n\)-gon,
+                as well as computing the number of configurations of the edges
+                of a \(2n\)-gon forming a sphere, a torus, a \(\mathbb{R}P^2\)
+                and a Klein bottle, thus proving the conjecture true for the
+                mentioned manifolds.
+              </p>
+              <p>
+                I started developing this project in the summer of 2014 at
+                <a
+                  href="http://www.math.bas.bg/omi/hssimi/?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >HSSIMI</a
+                >
+                - a summer research school held at Blagoevgrad, Bulgaria. I
+                worked under the guidance of Katerina Velcheva from Stanford.
+                Afterwards, I continued working on the topic under the guidance
+                of Prof. Kopanov from Plovdiv University. The project was
+                presented at the 27th edition of
+                <a
+                  href="http://www.eucys2015.eu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >EUCYS</a
+                >, the largest science fair for high school students in Europe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- foosrank -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              FoosRank (HackMIT 2018)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank">
+                Go to web app
+              </a>
+              |
+              <a
+                href="https://github.com/kristian-georgiev/FoosRank"
+                target="_blank"
+                >Visit repository</a
+              >
+              <img
+                src="img/foosrank.png"
+                alt="foosrank logo"
+                style="max-width: 50%"
+                class="activator"
+              />
+              <p>
+                I play an unhealthy amount of foosball. And so do a lot of my
+                friends. Soon the inevitable question arises -
+                <strong>Who is the best?</strong> To answer that,
+                <a href="https://github.com/madelinez820" target="_blank"
+                  >Maddy</a
+                >
+                and I created FoosRank - a ranking system for foosball games.
+                The algorithm is a slight modification of the ELO system, used
+                in chess among others. FoosRank also keeps the score during the
+                game and shows each user their game history and ranking over
+                time.
+              </p>
+              <p>
+                I'm very happy that the app caught on and 20+ people have
+                recorded 500+ games on the platform since we made it!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- easyfill -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEasyFill">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEasyFill"
+              aria-expanded="false"
+              aria-controls="flush-collapseEasyFill"
+            >
+              EasyFill (PerkinsHacks 2018)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseEasyFill"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingEasyFill"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <p>
+                <strong
+                  >A smart form-parser to help visually impaired people fill out
+                  forms.</strong
+                >
+              </p>
+              <p>
+                No one likes filling out forms, but the routine tasks of filling
+                out taxes or visa applications are especially hard for the
+                visually impaired. As a result, we came up with an idea of a
+                smart scanner application that would save the time and energy of
+                people who wouldn’t be able to read the forms on their own.
+              </p>
+              <p>
+                We created a scanner Android application that takes a photo of
+                the form, crops the image so that the 4 edges of the paper match
+                the 4 edges of the camera (which would accommodate people who
+                can’t see well enough to perfectly line up the edges of the
+                paper with the edges of the camera), and uses an algorithm we
+                developed to detect the locations of each text box that needs to
+                be filled in. Next, it verbally prompts the user (who can also
+                use the UI buttons to go to the previous text box, the next text
+                box, or print out the form) as it goes through each textbox one
+                by one and saves their answers, eventually returning a PDF of
+                the form with all the text boxes filled in with user input to be
+                emailed / printed out. For our purposes, we wanted to code a
+                smartphone application because we felt like the convenience of
+                having your phone be able to read text and fill out forms for
+                you would be very appealing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- dorm -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEasyFill">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseDorm"
+              aria-expanded="false"
+              aria-controls="flush-collapseDorm"
+            >
+              Dorm Room Automation System (2017)
+            </button>
+          </h2>
+          <div
+            id="flush-collapseDorm"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingDorm"
+            data-bs-parent="#accordionFlushProjects"
+          >
+            <div class="accordion-body">
+              <img
+                src="img/workspace.jpg"
+                alt="dorm room workspace"
+                style="max-width: 70%"
+              />
+              <p>
+                I noticed that my routine is quite repetitive and I can automate
+                some mundane tasks like playing music on different platforms,
+                maintaing alarms, calendars and to-do lists, and controlling the
+                lights and multiple monitors. I found (with the help of a
+                friend) a fully functional PC that MIT was about to throw out
+                and turned it into a media server that constantly listens for
+                voice commands. I wanted to make everything from scratch for the
+                sake of learning. At some point I realized my naivete and used
+                the
+                <a
+                  href="https://github.com/cmusphinx/pocketsphinx"
+                  target="_blank"
+                  >pocketsphinx</a
+                >
+                library for voice recognition instead of ad-hoc code snippets
+                for single words.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Classes section -->
+      <h2 style="margin-top: 40px">Coursework</h2>
+      <p>
+        These are some of my favorite classes from my undergraduate studies.
+      </p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item align-items-center">
+          Machine Learning (6.867)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Fall 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Optimization for Machine Learning (<a
+            href="http://optml.mit.edu/teach/6881/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.881</a
+          >)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Spring 2020</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Topics in Deployable Machine Learning (<a
+            href="https://people.csail.mit.edu/madry/6.S979/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.S979</a
+          >)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Fall 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Fundamentals of Probability (<a
+            href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-436j-fundamentals-of-probability-fall-2018/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.436</a
+          >)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Fall 2018</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Mathematical Statistics (<a
+            href="https://www.mit.edu/~18.655/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >18.655</a
+          >)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Spring 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Advanced Algorithms (<a
+            href="http://courses.csail.mit.edu/6.854/20/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.854</a
+          >)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Fall 2020</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Modern Discrete Probability and Stochastic Processes (6.265)
+          <span class="badge bg-primary">Graduate</span>
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Spring 2020</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Abstract Algebra I (18.701)
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Fall 2017</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Linear PDEs: Analysis and Numerics (<a
+            href="https://github.com/mitmath/18303"
+            target="_blank"
+            rel="noopener noreferrer"
+            >18.303</a
+          >)
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Spring 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Introduction to Functional Analysis (<a
+            href="https://math.mit.edu/~rbm/18.102Sp20/18.102Sp20.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >18.102</a
+          >)
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Spring 2020</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Combinatorial Analysis (<a
+            href="https://yufeizhao.com/211/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >18.211</a
+          >)
+          <span class="badge bg-success">Math</span>
+          <span class="badge bg-light text-dark">Fall 2018</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Elements of Software Construction (<a
+            href="http://web.mit.edu/6.031/www/fa19/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.031</a
+          >)
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Fall 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Design and Analysis of Algorithms (6.046)
+          <span class="badge bg-secondary">CS</span>
+          <span class="badge bg-light text-dark">Fall 2019</span>
+        </li>
+      </ul>
+
+      <h2 style="margin-top: 40px">Teaching</h2>
+      <p>I have served as a course assistant for the following classes.</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item align-items-center">
+          Introduction to Deep Learning (<a
+            href="http://introtodeeplearning.com/2020/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >6.S191</a
+          >)
+          <span class="badge bg-danger">teaching assistant</span>
+          <span class="badge bg-light text-dark">IAP (Winter) 2020</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Introduction to Inference (6.008)
+          <span class="badge bg-warning text-dark">lab assistant</span>
+          <span class="badge bg-light text-dark">Fall 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Introduction to Machine Learning (6.036)
+          <span class="badge bg-warning text-dark">lab assistant</span>
+          <span class="badge bg-light text-dark">Spring 2019</span>
+        </li>
+        <li class="list-group-item align-items-center">
+          Abstract Algebra I (18.701)
+          <span class="badge bg-info text-dark">grader</span>
+          <span class="badge bg-light text-dark">Fall 2018</span>
+        </li>
+      </ul>
+    </div>
     <!-- end of container -->
 
-    <!-- Classes section -->
-
-    <div id="classes" style="height:1px"></div>
-
-    <div class="parallax-container valign-wrapper blue snap-scrolled" style="min-height:100vh;">
-
-      <div class="section">
-        <div class="container" id="about" style="min-height:60vh;position:relative;top:0%">
-          <div class="section no-pad-bot" style="position:relative">
-            <div class="row">
-              <blockquote class="title" style="font-size:2rem;font-weight:bold">
-                Classes
-              </blockquote>
-
-              <div class="padded-less-less">
-                <div class="section scrollspy" id="classes">
-                  <!-- <div class="section"> -->
-
-                  <!--   Icon Section   -->
-                  <div class="row">
-                    <div class="col s12 m6">
-                      <div class="icon-block">
-                        <h2 class="center"><i class="material-icons">school</i></h2>
-                        <h5 class="center">Coursework</h5>
-
-
-                        <div class="card">
-                          <div class="card-content">
-
-                            <p class="light center">(<span class="red-text"> G = graduate,</span>, <span
-                                class="blue-text">H = header/ advanced,</span>, <span class="green-text">U =
-                                undergraduate</span>)</p>
-                            <p class="grey-text">During my undergraduate studies at MIT, I've taken a number of classes.
-                              Below
-                              are some of my favorite.</p>
-                          </div>
-
-                          <ul class="collection light">
-                            <li class="collection-item avatar">
-                              <img src="img/g.jpg" class="circle">
-                              <span class="title black-text">Machine Learning (6.867)</span>
-                              <p class="grey-text">Fall 2019
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/g.jpg" class="circle">
-                              <span class="title black-text">Fundamentals of Probability (6.436)</span>
-                              <p class="grey-text">Fall 2018
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/g.jpg" class="circle">
-                              <span class="title black-text">Mathematical Statistics (18.655)</span>
-                              <p class="grey-text">Spring 2019
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/h.jpg" class="circle">
-                              <span class="title black-text"> Design and Analysis of Algorithms (6.046)</span>
-                              <p class="grey-text">Fall 2019
-                              </p>
-                            </li>
-                            <!-- <li class="collection-item avatar">
-                              <img src="img/g.jpg" class="circle">
-                              <span class="title">Machine Learning (6.867)</span>
-                              <p>Fall 2019
-                              </p>
-                            </li> -->
-                            <!-- <li class="collection-item avatar">
-                              <img src="img/h.jpg" class="circle">
-                              <span class="title black-text">Design and Analysis of Algorithms (6.046)</span>
-                              <p class="grey-text">Fall 2019
-                              </p>
-                            </li> -->
-                            <li class="collection-item avatar">
-                              <img src="img/h.jpg" class="circle">
-                              <span class="title black-text">(Abstract) Algebra I (18.701)</span>
-                              <p class="grey-text">Fall 2017
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/u.jpg" class="circle">
-                              <span class="title black-text">Linear PDEs: Analysis and Numerics (18.303)</span>
-                              <p class="grey-text">Spring 2019
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col s12 m6">
-                      <div class="icon-block">
-                        <h2 class="center"><i class="material-icons">group</i></h2>
-                        <h5 class="center">Teaching</h5>
-
-                        <div class="card">
-                          <div class="card-content">
-                            <p class="light center">(<span class="pink-text text-darken-4">TA = teaching assistant,</span>
-                              <span class="blue-text text-darken-4">LA = lab assistant,</span>, <span
-                                class="black-text">O =
-                                other</span>)</p>
-                            <p class="grey-text">Since my sophomore year, I have started to serve as a course assistant
-                              for
-                              some
-                              classes.</p>
-                          </div>
-                          <ul class="collection light">
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/ta.jpg" class="circle">
-                              <span class="title black-text">Introduction to Deep Learning (6.S191) TA</span>
-                              <p class="grey-text">IAP 2020
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/la.jpg" class="circle">
-                              <span class="title black-text">Introduction to Inference (6.008) LA</span>
-                              <p class="grey-text">Fall 2019
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/la.jpg" class="circle">
-                              <span class="title black-text">Introduction to Machine Learning (6.036) LA</span>
-                              <p class="grey-text">Spring 2019
-                              </p>
-                            </li>
-                            <li class="collection-item avatar">
-                              <img src="img/o.jpg" class="circle">
-                              <span class="title black-text">(Abstract) Algebra I (18.701) Grader</span>
-                              <p class="grey-text">Fall 2018
-                              </p>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contacts section -->
-
-    <div id="contacts" style="height:50px"></div>
-
-    <div class="container snap-scrolled" style="min-height:40vh;">
-      <div class="section">
-        <div class="row">
-          <blockquote class="title" style="font-size:40px;font-weight:bold">
-            Contact me
-          </blockquote>
-
-
-          <!-- end of col -->
-          <div class="col 6 s12">
-            <div class="card horizontal">
-
-              <div class="card-stacked">
-                <div class="card-content">
-                  <p class="card-title"> Don't hesitate to write to me at
-                    <a href="mailto:krisgrg@mit.edu">krisgrg
-                      <span style="color:teal;font-size:.75em"> at </span>mit.edu</a>.
-
-                  </p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- end of col -->
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-  <!-- end of overall wrapper -->
-
-
-  <!-- Footer -->
-
-  <footer class="page-footer blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <a href="https://www.youtube.com/watch?v=xaVGvodNYW4" target="_blank">
-            <img src="footage/rick-and-morty.jpg" alt="Rick and Morty meme here" style="max-height:80pt">
-          </a>
-          <p class="grey-text text-lighten-4"> Let's go. In and out. 20 minutes. </p>
-        </div>
-        <div class="col l3 s12">
-        </div>
-
-        <div class="col l3 s12">
-          <blockquote>
-            <h5>Social media</h5>
-          </blockquote>
-          <div>
-            <a href="https://www.facebook.com/kristian.georgieff" target="_blank">
-              <img src="social-media-icons/fb-icon.png" alt="facebook-account" style="margin-right:10%">
-            </a>
-            <a href="https://www.linkedin.com/in/kristian-georgiev-7883b4a0/" target="_blank">
-              <img src="social-media-icons/linkedin-icon.png" alt="linkedin-account" style="margin-right:10%">
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
+    <footer style="margin-top: 5em">
+      P.S. I also like to
+      <a
+        href="https://www.strava.com/athletes/62385491"
+        target="_blank"
+        rel="noopener noreferrer"
+        >run</a
+      >
+      every now and then.
+    </footer>
 
     <!--  Scripts-->
-    <script src="particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-  </script>
-</body>
-
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      iintegrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("send", "pageview");
+    </script>
+    <!-- End Google Analytics -->
+  </body>
 </html>
