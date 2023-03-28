@@ -40,43 +40,59 @@
       <div class="row">
         <div class="col-sm">
           <h1>Kristian Georgiev</h1>
-          <h6>PhD candidate, <a href="https://www.eecs.mit.edu/" target="_blank">MIT EECS</a> </h6>
+          <h6>
+            PhD candidate,
+            <a href="https://www.eecs.mit.edu/" target="_blank">MIT EECS</a>
+          </h6>
           <h6>S.B. MIT '21</h6>
           <p>
-            I am a first-year PhD student at the <a href="https://toc.csail.mit.edu/" target="_blank">TOC group</a> at MIT advised by
-            <a href="https://www.samuelbhopkins.com/" target="_blank">Samuel Hopkins</a> and <a href="https://people.csail.mit.edu/madry/" target="_blank">Aleksander Mądry</a>.
-               My academic interests are at the intersection of machine learning, theoretical computer science, and optimization.
+            I am a second-year PhD student advised by
+            <a href="https://people.csail.mit.edu/madry/" target="_blank"
+              >Aleksander Mądry</a
+            >. I am interested in the
+            <a href="https://gradientscience.org/about/" target="_blank">
+              science of deep learning</a
+            >
+            and deep learning for science. I also like thinking about
+            adversarial robustness and privacy.
           </p>
-            
+
           <p>
-            Previously, I obtained a joint degree in Mathematics and Computer Science at
-            MIT, supported in part by the
-            <a href="https://rd-stewardship.mit.edu/donor-info/DENTC/"
-              target="_blank"
-              >Marie G Dennett Foundation</a >.
-           During that time, I was fortunate to be advised by 
-            <a href="http://asu.mit.edu/" target="_blank" rel="noopener noreferrer" >Prof. Ozdaglar</a> as a
-            <a href="https://superurop.mit.edu/scholars/kristian-georgiev/" target="_blank"
-              rel="noopener noreferrer"
-              >SuperUROP scholar</a> working on equivariance in deep learning, as well as by
+            I obtained a joint degree in Math and Computer Science from
+            MIT. During that time, I was fortunate to be advised by
             <a
-              href="https://people.csail.mit.edu/madry"
+              href="http://asu.mit.edu/"
               target="_blank"
               rel="noopener noreferrer"
-              >Prof. Mądry</a
-            >, working on adversarial robustness. I have interned at
+              >Asuman Ozdaglar</a
+            >
+            as a
+            <a
+              href="https://superurop.mit.edu/scholars/kristian-georgiev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SuperUROP scholar</a
+            >
+            working on equivariance in deep learning. Previously, I was at
             <a href="https://quantco.com/" target="_blank">QuantCo</a> and
-            <a href="https://www.apple.com/siri/" target="_blank">Apple</a
-            >.
+            <a href="https://www.apple.com/siri/" target="_blank">Apple</a>.
           </p>
           <p>
-            I grew up in Bulgaria. In my free time, I enjoy playing soccer,
-            volleyball, and chess. At MIT, I have led the
+            I grew up in Bulgaria. In my free time, I enjoy playing soccer and
+            chess. At MIT, I have led the
             <a href="http://aiclub.mit.edu/" target="_blank">AI@MIT</a> club.
+          </p>
+
+          <p>
+            This website was last updated on
+            <script>
+              var date = new Date(document.lastModified);
+              document.write(date.toDateString().split(" ").slice(1).join(" "));
+            </script>.
           </p>
         </div>
         <div class="col-sm">
-          <div class="card align-items-center" style="max-width: 98%">
+          <div class="card align-items-center" style="max-width: 95%">
             <img
               alt="Profile Photo Kristian Georgiev"
               src="img/profile_photo.jpg"
@@ -85,15 +101,8 @@
             />
             <div class="card-body align-items-center">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  krisgrg@mit.edu |
-                  <a
-                    href="https://drive.google.com/file/d/1hj8NHscaUAOl-byqZKBXfY43xn1bxAv2/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Résumé</a
-                  >
-                  |
+                <li class="list-group-item text-center">krisgrg@mit.edu</li>
+                <li class="list-group-item text-center">
                   <a
                     href="https://twitter.com/kris_georgiev1"
                     target="_blank"
@@ -102,10 +111,10 @@
                   >
                   |
                   <a
-                    href="https://www.linkedin.com/in/kristiangeorgiev97/"
+                    href="https://scholar.google.com/citations?user=t8RKSJsAAAAJ&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >LinkedIn</a
+                    >Google Scholar</a
                   >
                   |
                   <a
@@ -115,15 +124,6 @@
                     >GitHub</a
                   >
                 </li>
-                <li class="list-group-item">
-                  Website last updated on
-                  <script>
-                    var date = new Date(document.lastModified);
-                    document.write(
-                      date.toDateString().split(" ").slice(1).join(" ")
-                    );
-                  </script>
-                </li>
               </ul>
             </div>
           </div>
@@ -132,46 +132,107 @@
 
       <!-- Publications section -->
       <h2 style="margin-top: 40px">Manuscripts / Preprints</h2>
+      <p>
+        * denotes equal contribution; authors are ordered alphabetically unless
+        they're not
+      </p>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
+          <strong> TRAK: Attributing Model Behavior at Scale </strong>
           <a
-            href="https://arxiv.org/abs/2110.06084"
+            href="https://arxiv.org/abs/2303.14186"
             target="_blank"
             rel="noopener noreferrer"
           >
-          Implicit Bias of Linear Equivariant Networks</a>, Hannah Lawrence, Kristian Georgiev, Andrew Dienes, Bobak T. Kiani.
+            [arxiv]</a
+          >
+          <a
+            href="http://gradientscience.org/trak/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [blog post]</a
+          >
+          <a
+            href="https://github.com/MadryLab/trak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [python package]</a
+          >
+          <a
+            href="https://trak.csail.mit.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [website]</a
+          >
+
+          <br />
+          Sung Min Park*, Kristian Georgiev*, Andrew Ilyas*, Guillaume Leclerc,
+          Aleksander Madry
+          <br />
         </li>
       </ul>
       <h2 style="margin-top: 40px">Publications</h2>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
+          <strong>
+            Privacy Induces Robustness: Information-Computation Gaps and Sparse
+            Mean Estimation
+          </strong>
+          <a
+            href="https://arxiv.org/abs/2211.00724"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [arxiv]</a
+          >
+          <br />
+          Kristian Georgiev, Samuel B. Hopkins
+          <br />
+          NeurIPS 2022
+        </li>
+        <li class="list-group-item">
+          <strong> Implicit Bias of Linear Equivariant Networks </strong>
+          <a
+            href="https://arxiv.org/abs/2110.06084"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [arxiv]</a
+          >
+          <br />
+          Hannah Lawrence, Kristian Georgiev, Andrew Dienes, Bobak T. Kiani
+          <br />
+          ICML 2022
+        </li>
+        <li class="list-group-item">
+          <strong
+            >On the Convergence Theory of Debiased Model-Agnostic
+            Meta-Reinforcement Learning</strong
+          >
           <a
             href="https://arxiv.org/abs/2002.05135"
             target="_blank"
             rel="noopener noreferrer"
           >
-            On the Convergence Theory of Debiased Model-Agnostic Meta-Reinforcement Learning</a
-          >, Alireza Fallah, Kristian Georgiev, Aryan Mokhtari, Asuman Ozdaglar. <br>
-          NeurIPS 2021.
-        </li>
-        <li class="list-group-item">
-          <a
-            href="http://mds2017.math.bas.bg/wp-content/uploads/MDS2017-7MEHM-Otsetarova_Georgiev_Delchev.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Results on Tilings with Walkup Structure and Their Properties</a
-          >, Tania Otsetarova, Kristian Georgiev, Konstantin Delchev. <br> Second
-          International Conference “Mathematics Days in Sofia” 2017.
+            [arxiv]
+          </a>
+          <br />
+          Alireza Fallah, Kristian Georgiev, Aryan Mokhtari, Asuman Ozdaglar
+          <br />
+          NeurIPS 2021
         </li>
       </ul>
 
+
       <!-- Projects section -->
       <h2 style="margin-top: 40px">
-        Projects
+        Misc Projects
         <!-- <button type="button" class="btn btn-outline-danger toggle-all"> Expand all </button> -->
       </h2>
-      Below is a mix of class projects and stuff just for fun.
+      a mix of class projects and stuff just for fun
 
       <div
         class="accordion accordion-flush"
@@ -205,14 +266,14 @@
                 href="https://drive.google.com/file/d/1ZjVN4ljYuwom5x5FlNItjTcx7uikZIdv/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Read full paper</a
+                >Paper</a
               >
               |
               <a
                 href="https://drive.google.com/file/d/1dT_No7xE9xR2JNjKDFaKtkDrP0HexeC-/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View slides</a
+                >Slides</a
               >
               <figure class="figure">
                 <img
@@ -279,19 +340,19 @@
                 href="https://drive.google.com/file/d/1gPAy1tuJ8uzb0Io1iFqrNalFb8Opkbpz/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Read full paper</a
+                >Paper</a
               >
               |
               <a
                 href="https://github.com/kristian-georgiev/867-Project"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Visit repository</a
+                >Repo</a
               >
               <img
                 src="img/meta_viz_fig.png"
                 alt="meta visualization figure"
-                style="max-width: 60%; margin-left: 20px;"
+                style="max-width: 60%; margin-left: 20px"
               />
               <p>
                 Gradient based meta-learning has established itself as a
@@ -339,19 +400,19 @@
                 href="https://drive.google.com/file/d/1APiihQP8XTeIGF8ZP86vd6Q_vBNShy-b/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Read full paper</a
+                >Paper</a
               >
               |
               <a
                 href="https://docs.google.com/presentation/d/e/2PACX-1vSqaVm_AEvDVfqOrQzLullmEpe8HRYDO1N02qTm2B_XKIIAdE0IPEykJHUClIBOVrYG-xUJle586L-_/pub?start=false&loop=false&delayms=3000"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View slides</a
+                >Slides</a
               >
               <img
                 src="img/rob_dissect.png"
                 alt="robust dissection figure"
-                style="max-width: 60%; margin-left: 20px;"
+                style="max-width: 60%; margin-left: 20px"
               />
               <p>
                 We explore the hypothesis that robust training helps to
@@ -392,7 +453,7 @@
                 href="https://drive.google.com/file/d/1leRazdwKrOKU9iWuOcEubFKO0JbHqvGB/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Read full paper</a
+                >Paper</a
               >
 
               <figure class="figure">
@@ -467,12 +528,12 @@
               <a
                 href="https://drive.google.com/file/d/1BHSAqCiea69z0sLim41cKOwHuINt9YHH/view?usp=sharing"
                 target="_blank"
-                >Read full paper
+                >Paper
               </a>
               <img
                 src="img/kde.png"
                 alt="Feynman-Kac project"
-                style="max-width: 60%; margin-left: 20px;"
+                style="max-width: 60%; margin-left: 20px"
               />
               <p>
                 Continuous time Markov processes are heavily used to approximate
@@ -504,7 +565,8 @@
               aria-expanded="false"
               aria-controls="flush-collapseRSI"
             >
-              On the Size of Unions of Lines Satisfying the Wolff Axiom (Research Science Institute 2015)
+              On the Size of Unions of Lines Satisfying the Wolff Axiom
+              (Research Science Institute 2015)
             </button>
           </h2>
           <div
@@ -514,27 +576,33 @@
             data-bs-parent="#accordionFlushProjects"
           >
             <div class="accordion-body">
-(In Proceedings of the Forty-sixth Spring Conference of the Union of Bulgarian Mathematicians 2017.) <br>
+              (In Proceedings of the Forty-sixth Spring Conference of the Union
+              of Bulgarian Mathematicians 2017.) <br />
               <a
                 href="https://www.cee.org/news/eighty-four-high-school-students-selected-and-participating-32nd-research-science-institute-mit"
                 target="_blank"
-                >Read full paper </a>
+                >Paper
+              </a>
               <img
                 class="activator"
                 src="img/besicovitch.jpeg"
-                style="max-width: 60%; margin-left: 20px;"
+                style="max-width: 60%; margin-left: 20px"
                 alt="besicovitch-set"
               />
-              <br>
-              The paper deals with finding unions of lines in \(\mathbb{F}^n_{p^{2k}}\) which obey the Wolff axiom and have
-minimal size. We provide an extension of the constructions for \(\mathbb{F}^3_{p^{2k}}\), obtained by Tao in 2002,
-to a construction for \(\mathbb{F}^n_{p^{2k}}\). We determine the size of the union of lines in our construction
-in \(\mathbb{F}^n_{p^{2k}}\) to be \(\mathcal{O}\left(p^{1.6kn}\right)\). We prove that our construction obeys the Wolff axiom up to a
-heuristically negligible number of lines.
+              <br />
+              The paper deals with finding unions of lines in
+              \(\mathbb{F}^n_{p^{2k}}\) which obey the Wolff axiom and have
+              minimal size. We provide an extension of the constructions for
+              \(\mathbb{F}^3_{p^{2k}}\), obtained by Tao in 2002, to a
+              construction for \(\mathbb{F}^n_{p^{2k}}\). We determine the size
+              of the union of lines in our construction in
+              \(\mathbb{F}^n_{p^{2k}}\) to be
+              \(\mathcal{O}\left(p^{1.6kn}\right)\). We prove that our
+              construction obeys the Wolff axiom up to a heuristically
+              negligible number of lines.
             </div>
           </div>
         </div>
-
 
         <!-- 2n-gons -->
         <div class="accordion-item">
@@ -562,12 +630,12 @@ heuristically negligible number of lines.
               <a
                 href="https://drive.google.com/file/d/1ji1EQ2Bp_3ka4Mm-K0LC6Z-ck76UmKBs/view?usp=sharing"
                 target="_blank"
-                >Read full paper</a
+                >Paper</a
               >
               <img
                 class="activator"
                 src="img/add-sphere.png"
-                style="max-width: 60%; margin-left: 20px;"
+                style="max-width: 60%; margin-left: 20px"
                 alt="glue-a-sphere-to-a-torus"
               />
               <p>
@@ -608,70 +676,6 @@ heuristically negligible number of lines.
           </div>
         </div>
 
-        <!-- hiitify -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingHIIT">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseHIIT"
-              aria-expanded="false"
-              aria-controls="flush-collapseHIIT"
-            >
-              HIITify (2020)
-            </button>
-          </h2>
-          <div
-            id="flush-collapseHIIT"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingHIIT"
-            data-bs-parent="#accordionFlushProjects"
-          >
-            <div class="accordion-body">
-              <a
-                href="https://chrome.google.com/webstore/detail/hiitify/bepaliaolnpicokhibkbcoinelekeafa"
-                target="_blank"
-              >
-                Go to Chrome store
-              </a>
-              |
-              <a href="https://github.com/madelinez820/HIITify" target="_blank"
-                >Visit repository</a
-              >
-              <img
-                src="img/hiitify.png"
-                alt="foosrank logo"
-                style="max-width: 60%; margin-left: 20px;"
-                class="activator"
-              />
-              <p>
-                Lockdown motivated me to make an app that makes workouts more
-                fun. HIITify is a an app that lets you customize your favorite
-                Spotify songs to match your HIIT workout with custom BPMs for
-                workout and rest intervals.
-              </p>
-
-              Ever wanted to listen to your favorite Spotify mix during your
-              HIIT (High Intensity Interval Training) training to have the
-              perfect workout? HIITify is a Spotify extention that allows you
-              to:
-              <ul>
-                <li>
-                  set your desired workout tempo (BPM) and maintains it on all
-                  of your songs during the workout
-                </li>
-                <li>set the length of each workout and rest interval</li>
-                <li>have beep cues for the start and end of each interval</li>
-                <li>
-                  manually update your song speed to a speed of your choice at
-                  any time.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
         <!-- foosrank -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
@@ -694,13 +698,13 @@ heuristically negligible number of lines.
           >
             <div class="accordion-body">
               <a href="https://foosrank-9e12f.firebaseapp.com/" target="_blank">
-                Go to web app
+                Web app
               </a>
               |
               <a
                 href="https://github.com/kristian-georgiev/FoosRank"
                 target="_blank"
-                >Visit repository</a
+                >Repo</a
               >
               <img
                 src="img/foosrank.png"
@@ -709,124 +713,12 @@ heuristically negligible number of lines.
                 class="activator"
               />
               <p>
-                I play an unhealthy amount of foosball. And so do a lot of my
-                friends. Soon the inevitable question arises -
-                <strong>Who is the best?</strong> To answer that,
-                <a href="https://github.com/madelinez820" target="_blank"
-                  >Maddy</a
-                >
-                and I created FoosRank - a ranking system for foosball games.
-                The algorithm is a slight modification of the ELO system, used
-                in chess among others. FoosRank also keeps the score during the
-                game and shows each user their game history and ranking over
-                time.
-              </p>
-              <p>
-                I'm very happy that the app caught on and 20+ people have
-                recorded 500+ games on the platform since we made it!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- easyfill -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingEasyFill">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseEasyFill"
-              aria-expanded="false"
-              aria-controls="flush-collapseEasyFill"
-            >
-              EasyFill (PerkinsHacks 2018)
-            </button>
-          </h2>
-          <div
-            id="flush-collapseEasyFill"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingEasyFill"
-            data-bs-parent="#accordionFlushProjects"
-          >
-            <div class="accordion-body">
-              <p>
-                <strong
-                  >A smart form-parser to help visually impaired people fill out
-                  forms.</strong
-                >
-              </p>
-              <p>
-                No one likes filling out forms, but the routine tasks of filling
-                out taxes or visa applications are especially hard for the
-                visually impaired. As a result, we came up with an idea of a
-                smart scanner application that would save the time and energy of
-                people who wouldn’t be able to read the forms on their own.
-              </p>
-              <p>
-                We created a scanner Android application that takes a photo of
-                the form, crops the image so that the 4 edges of the paper match
-                the 4 edges of the camera (which would accommodate people who
-                can’t see well enough to perfectly line up the edges of the
-                paper with the edges of the camera), and uses an algorithm we
-                developed to detect the locations of each text box that needs to
-                be filled in. Next, it verbally prompts the user (who can also
-                use the UI buttons to go to the previous text box, the next text
-                box, or print out the form) as it goes through each textbox one
-                by one and saves their answers, eventually returning a PDF of
-                the form with all the text boxes filled in with user input to be
-                emailed / printed out. For our purposes, we wanted to code a
-                smartphone application because we felt like the convenience of
-                having your phone be able to read text and fill out forms for
-                you would be very appealing.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- dorm -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingEasyFill">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseDorm"
-              aria-expanded="false"
-              aria-controls="flush-collapseDorm"
-            >
-              Dorm Room Automation System (2017)
-            </button>
-          </h2>
-          <div
-            id="flush-collapseDorm"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingDorm"
-            data-bs-parent="#accordionFlushProjects"
-          >
-            <div class="accordion-body">
-              <img
-                src="img/workspace.jpg"
-                alt="dorm room workspace"
-                style="max-width: 70%"
-              />
-              <p>
-                In my freshman year, I tried automating some mundane tasks
-                like playing music on different platforms,
-                maintaing alarms, calendars and to-do lists, and controlling the
-                lights and monitors. I found an oldish PC that MIT was about to throw out,
-                and turned it into a media server that constantly listens for
-                voice commands. Having coded for an entire month or so by then,
-                I was certain that it would be ez to make everything
-                from scratch. Soon, my bravery stemming from Dunning-Kruger's 
-                Mount Stupid was not enough to complete the task, and I 
-                resorted to using the
-                <a
-                  href="https://github.com/cmusphinx/pocketsphinx"
-                  target="_blank"
-                  >pocketsphinx</a
-                >
-                library for the voice recognition part.
+                In college, I played lots of foosball. And so did a lot of my
+                friends. Being a competitive bunch, we created FoosRank - a
+                ranking system for foosball games. The algorithm is a slight
+                modification of the ELO system, used in, e.g., chess. FoosRank
+                also keeps the score during the game and shows each user their
+                game history and ranking over time.
               </p>
             </div>
           </div>
@@ -835,7 +727,6 @@ heuristically negligible number of lines.
 
       <!-- Teaching section -->
       <h2 style="margin-top: 40px">Teaching</h2>
-      <p>I have served as a course assistant for the following classes.</p>
       <ul class="list-group list-group-flush">
         <li class="list-group-item align-items-center">
           Introduction to Deep Learning (<a
@@ -865,11 +756,10 @@ heuristically negligible number of lines.
         </li>
       </ul>
 
+
       <!-- Classes section -->
-      <h2 style="margin-top: 40px">Coursework</h2>
-      <p>
-        These are some of my favorite classes.
-      </p>
+      <!-- <h2 style="margin-top: 40px">Coursework</h2>
+      <p>Some of my favorite classes.</p>
       <ul class="list-group list-group-flush">
         <li class="list-group-item align-items-center">
           Machine Learning (6.867)
@@ -989,20 +879,8 @@ heuristically negligible number of lines.
           <span class="badge bg-light text-dark">Fall 2019</span>
         </li>
       </ul>
-
-    </div>
+    </div> -->
     <!-- end of container -->
-
-    <footer style="margin-top: 5em">
-      P.S. I also like to
-      <a
-        href="https://www.strava.com/athletes/62385491"
-        target="_blank"
-        rel="noopener noreferrer"
-        >run</a
-      >
-      every now and then.
-    </footer>
 
     <!--  Scripts-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
